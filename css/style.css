@@ -1,0 +1,167 @@
+
+.banner {
+
+}
+.banner .row
+{
+    text-align:center;
+    margin-top:50px;
+
+}
+#hero1 {
+    padding-top: 50px;
+    font-size: 27px;
+}
+#hero2 {
+    font-size: 18px;
+}
+.banner h1
+{
+    color:white;
+    font-size: 56px;
+}
+.hero-img{
+    background-image: url(../images/IMG_6131.JPG);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    min-height: 800px;
+    background-size: cover;
+}
+.hero-img1{
+    background-image: url(../images/dance.png);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    min-height: 400px;
+    background-size: cover;
+
+}
+.layer {
+    background-color: rgba(245, 0, 164, 0.7);
+    position: absolute;
+    width: 100%;
+    min-height: 400px;
+
+}
+.hero-img2{
+    background-image: url(../images/blood.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    min-height: 500px;
+    background-size: cover;
+}
+.banner p
+{
+    color:white;
+    font-size: 24px;
+}
+.boxes:nth-child(1) {
+    padding-top: 100px;
+    paddig-left: 150px;
+}
+.boxes:nth-child(2) {
+    margin-top: 20px;
+}
+.navbar-brand>img{
+}
+.box1{
+    background-color: #F500A4;
+    opacity: .75;
+   padding: 30px 40px 30px 40px;
+    text-transform: uppercase;
+    width: 300px;
+
+}
+.box2{
+    background-color: #000000;
+    opacity: .70;
+    padding: 30px;
+    width: 300px;
+}
+/***********************************************************************
+*  OPAQUE NAVBAR SECTION
+***********************************************************************/
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.5);
+    /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 95px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+
+@media (max-width: 992px) {
+    .opaque-navbar {
+        background-color: black;
+        height: 60px;
+        transition: background-color .5s ease 0s;
+    }
+    .navbar-brand>img{
+        margin-top: -8px;
+        margin-left: 50%;
+        height: 45px
+
+    }
+    .boxes {
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+}
+
+
+
+/* Set the fixed height of the footer here */
+
+#footer {
+    height: 80px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    margin-bottom: -20px;
+}
+#footer1 {
+    height: 30px;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}
+#footer1 ul li{
+    display: inline-block;
+    list-style-type:none;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #footer1 {
+        margin-left: -60px;
+        margin-right: -20px;
+
+    }
+
+}
+
+a{
+    color: white;
+}
+
+a:focus, a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
