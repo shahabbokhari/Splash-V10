@@ -1,167 +1,149 @@
-
-.banner {
-
-}
-.banner .row
-{
-    text-align:center;
-    margin-top:50px;
-
-}
-#hero1 {
-    padding-top: 50px;
-    font-size: 27px;
-}
-#hero2 {
-    font-size: 18px;
-}
-.banner h1
-{
-    color:white;
-    font-size: 56px;
-}
-.hero-img{
-    background-image: url(../images/IMG_6131.JPG);
-    background-repeat: no-repeat;
-    background-position: 50% 10%;
-    min-height: 800px;
-    background-size: cover;
-}
-.hero-img1{
-    background-image: url(../images/dance.png);
-    background-repeat: no-repeat;
-    background-position: 50% 10%;
-    min-height: 400px;
-    background-size: cover;
-
-}
-.layer {
-    background-color: rgba(245, 0, 164, 0.7);
-    position: absolute;
+.slides {
+    position: relative;
     width: 100%;
-    min-height: 400px;
-
-}
-.hero-img2{
-    background-image: url(../images/blood.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 10%;
+    max-height: 500px !important;
     min-height: 500px;
     background-size: cover;
 }
-.banner p
-{
-    color:white;
-    font-size: 24px;
+.hero-image-info{
+    position: absolute;
+    right: 20%;
+    top:20%;
+    color: white;
+    width: 400px;
 }
-.boxes:nth-child(1) {
-    padding-top: 100px;
-    paddig-left: 150px;
+.mainHero{
+    position: relative;
+    width: 100%;
+    max-height: 500px !important;
+    min-height: 300px;
+    background-size: cover;
 }
-.boxes:nth-child(2) {
+.mainHero-image-info{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    color: white;
+    width: 300px;
+}
+.slick-dots li button:before{
+    font-size: 20px;
+    color: #ffffff;
+}
+.slick-dots{
+    padding-bottom: 30px;
+}
+.listTab{
+    background-color: #666666;
+    padding: 10px 0px 0px 0;
     margin-top: 20px;
 }
-.navbar-brand>img{
+hr{
+    margin-bottom: -5px;
+    border-top: 1px solid #333;
 }
-.box1{
-    background-color: #F500A4;
-    opacity: .75;
-   padding: 30px 40px 30px 40px;
-    text-transform: uppercase;
-    width: 300px;
-
+.image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
 }
-.box2{
-    background-color: #000000;
-    opacity: .70;
-    padding: 30px;
-    width: 300px;
+.image-wrapper img {
+    height: 100%;
+    width: 100%;
 }
-/***********************************************************************
-*  OPAQUE NAVBAR SECTION
-***********************************************************************/
-.opaque-navbar {
-    background-color: rgba(0,0,0,0.5);
-    /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 95px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
-}
-
-.opaque-navbar.opaque {
-    background-color: black;
+.image-wrapper .image-overlay {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background-color: rgba(0, 0, 0,.75);
+    color: white;
+    border-radius:60px;
+    width: 60px;
     height: 60px;
-    transition: background-color .5s ease 0s;
-}
-
-ul.dropdown-menu {
-    background-color: black;
-}
-
-
-@media (max-width: 992px) {
-    .opaque-navbar {
-        background-color: black;
-        height: 60px;
-        transition: background-color .5s ease 0s;
-    }
-    .navbar-brand>img{
-        margin-top: -8px;
-        margin-left: 50%;
-        height: 45px
-
-    }
-    .boxes {
-        padding-top: 60px;
-        padding-left: 0px;
-    }
-}
-
-
-
-/* Set the fixed height of the footer here */
-
-#footer {
-    height: 80px;
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    margin-bottom: -20px;
-}
-#footer1 {
-    height: 30px;
-    background-color: rgba(0,0,0,1);
-    color: white;
-    margin-top: 0;
     text-align: center;
 }
-#footer1 ul li{
-    display: inline-block;
-    list-style-type:none;
-    padding-left: 15px;
-    padding-top: 5px;
+.image-overlay p{
+    padding-top: 20px;
+    font-size: 10px;
 }
-
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
-    #footer {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    #footer1 {
-        margin-left: -60px;
-        margin-right: -20px;
-
-    }
-
+.row{
+    padding-top: 36px;
 }
-
-a{
+.tightList p{
+    margin-top: -10px;
+}
+.tightList{
+    padding-top: 20px;
+}
+.centerList div {
+    height: 400px;
+}
+.long-img{
+    position: relative;
+    text-align: center;
+}
+.long-img img{
+    position: absolute;
+    height: 436px;
+    width: 200px;
+}
+.hero-button {
+    padding: 15px 30px;
+    background-color: #333333;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nameSlides{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.hero-image-info h1,
+.hero-image-info h3{
     color: white;
 }
-
-a:focus, a:hover {
-    color: #ffffff;
-    text-decoration: none;
+.widget-show div:nth-child(odd){
+    color:white;
+    background: black;
+    padding: 10px 15px;
+}
+.widget-show div:nth-child(even){
+     background: #666666;
+    background-size: cover;
+     color: white;
+     padding: 10px 15px;
+}
+.widget-button {
+    padding: 10px 20px;
+    background-color: #333333;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0 20px 0;
+}
+.widget-img{
+    padding-top: 20px;
+}
+.tv-schedule-widget{
+    padding: 20px 0;
+}
+.topstories-schedule-tab{
+    color:white;
+    background: black;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+.topstories-schedule-info{
+    background-color: #666666;
+    color: white;
+    font-size: 13px;
+    margin-bottom: -10px ;
 }
