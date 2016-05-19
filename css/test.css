@@ -1,0 +1,3203 @@
+/* STYLES FROM zc-ssl.css BY WILL PARIS 10-04-2010 */
+#zc-shell {
+    border: 0;
+}
+/*#zc-ssl-top {*/
+    /*border-width: 1px; border-style: solid; border-color: #CCC #CCC #BBB;padding: 6px 0; background: url(http://images.zap2it.com/zc/ssl-top-grd.gif) repeat-x bottom; height: 1%; position: relative; z-index: 50; line-height: 16px;*/
+/*}*/
+*:first-child+html #zc-ssl-top {
+    height: 1%;
+}
+* html #zc-ssl-top {
+    height: 1%;
+}
+#zc-ssl-logo {
+    float: left; margin: 2px 8px 8px;border: 1px solid #333;background: #FFF;
+}
+h1#zc-ssl-st {
+    font: bold 27px/43px Tahoma, Geneva, sans-serif; margin: 0 0 -6px 8px; color: #173660; position: relative; top: -6px;
+}
+#zc-channel-functions {
+    float: right; display: inline; margin-right: 8px;
+}
+#zc-ssl-selView {
+    margin: 0 4px 0 8px;
+}
+#zc-ssl-dayNav-lbl {
+    margin-left: 8px;
+}
+#zc-wrapper #zc-ssl-dayNav-popup {
+    margin-top: 4px; background: #ECECEE;
+}
+#zc-ssl-dayNav .zc-topbar-dropdown-item {
+    white-space: nowrap; padding: 0 8px 5px 3px;
+}
+#zc-ssl-dayNav .zc-ssl-dayNav-link:link,
+#zc-ssl-dayNav .zc-ssl-dayNav-link:visited,
+#zc-ssl-dayNav a.zc-ssl-dayNav-link:hover,
+#zc-ssl-dayNav .zc-ssl-dayNav-link:active {
+    font-weight: normal; font-size: 14px; text-decoration: underline;
+}
+#zc-ssl-dayNav a.zc-ssl-dayNav-link:hover {
+    text-decoration: none;
+}
+#zc-ssl-dayNav-1 {
+    background-image: none; padding-left: 0 !important;
+}
+#zc-ssl-scrollList-top,
+#zc-ssl-scrollList-bottom {
+    background-color: rgba(29, 196, 188, 1);         height: 29px;
+    border-color: #BBB #CCC;
+    border-style: solid;
+    border-width: 0 1px 1px;
+}
+#zc-ssl-scrollList-bottom {
+    border-top: 1px solid #BBB;
+}
+#zc-ssl-scrollList-date {
+    margin-left: 118px; color: #FFF; display: block; font: bold 18px/29px Tahoma, Geneva, sans-serif;
+}
+#zc-ssl-scrollList-up,
+#zc-ssl-scrollList-down {
+    width: 105px; height: 29px; float: left; top: 0; left: 0;border-right: 1px solid #BBB !important;background: url(http://images.zap2it.com/zc/ssl-nav-arrow-up.gif) no-repeat center center; display: none;
+}
+#zc-ssl-scrollList-up:focus,
+#zc-ssl-scrollList-down:focus {
+    outline-style: none;
+}
+#zc-ssl-scrollList-down {
+    background-image: url(http://images.zap2it.com/zc/ssl-nav-arrow-down.gif);
+}
+#zc-ssl-scrollList {
+    position: relative; top: 0 !important; border-width: 1px 1px 0; border-style: solid; border-color: #BBB #CCC;
+}
+#zc-ssl-scrollList.zc-ssl-afBlock {
+    margin-top: 30px;
+}
+.zc-ssl-list #zc-ssl-scrollListBox {
+    overflow: auto; height: 400px; position: relative;
+}
+#zc-ssl .zc-ssl-pg {
+    border-bottom: 1px solid #BBB; position: relative; padding-left: 118px; font-size: 12px; line-height: 19px; height: 19px; background: transparent;overflow:hidden;
+}
+#zc-ssl .zc-ssl-pg .zc-icons .zc-ic {
+    /* display: inline-block !important; */
+}
+#zc-ssl .zc-ssl-pg-time {
+    position: absolute; top: 0; left: 0; width: 105px; text-align: center; border-right: 1px solid #BBB;
+}
+#zc-ssl .zc-ssl-pg-title,
+#zc-ssl .zc-ssl-pg-title:link,
+#zc-ssl .zc-ssl-pg-title:visited,
+#zc-ssl .zc-ssl-pg-title:hover,
+#zc-ssl .zc-ssl-pg-title:active {
+    font-size: 12px; padding-right: 3px; background: #FFF; position: relative; z-index: 10;
+}
+#zc-ssl .zc-ssl-pg-ep,
+#zc-ssl .zc-ssl-pg-ep:link,
+#zc-ssl .zc-ssl-pg-ep:visited,
+#zc-ssl .zc-ssl-pg-ep:hover,
+#zc-ssl .zc-ssl-pg-ep:active {
+    font-style: italic;
+}
+#zc-ssl .zc-ssl-pg-rating,
+#zc-ssl .zc-ssl-pg-ep {
+    color: #666; margin-right: 3px; position: relative; z-index: 5; background: #FFF;
+}
+#zc-ssl .zc-ssl-sp {
+    border-bottom: 1px solid #BBB; background: #CCC url(http://images.zap2it.com/zc/ssl-sp-grd.gif) repeat-x top; padding-left: 118px; font: bold 14px/19px Tahoma, Geneva, sans-serif; height: 19px; color: #173660;
+}
+#zc-shell #zc-ssl .zc-icons {
+    display: inline; position: relative; z-index: 1;margin-left: -3px !important;
+}
+
+#zc-ssl-printList {
+    display: none; border: 1px solid #CCC;
+}
+#zc-askPrintButton {
+    display: none; font-size: 18px; font-weight: bold; border: 2px solid #333; padding: 5px; margin: 8px 0; text-align: center;
+}
+@media print {
+    #zc-wrapper {
+        float: none !important;
+    }
+    #zc-wrapper-inner {
+        width: 100% !important;
+    }
+    #zc-ssl-dayNav-popup {
+        display: none;
+    }
+    #zc-askPrintButton {
+        display: block;
+    }
+    .zc-ssl-list-print #zc-askPrintButton {
+        display: none;
+    }
+}
+
+/* STYLES FROM zc-ssg.css BY WILL PARIS 10-04-2010 */
+.zc-channel-view#zc-shell {
+    float: left; width: 100%; border-top: 1px solid #CCC; line-height: 1.0; position: relative;
+}
+.zc-channel-view#zc-shell #zc-item {
+    margin: 0; padding:0;
+}
+
+.zc-channel-view#zc-shell #zc-day-nav-top {
+    position: static;
+    height: 27px; width: 100%;
+}
+.zc-channel-view#zc-shell #zc-grid-time-nav {
+    background: url(http://images.zap2it.com/tvlistings/zcore-channel-day-bg-odd.png); position: absolute; left: 15%; width: 85%; z-index: 1; display: none;
+}
+* html .zc-channel-view#zc-shell #zc-channel-grid #zc-grid-time-nav {
+    width: 100%;
+}
+#zc-top {
+    border-width: 0 1px 1px; border-style: solid; border-color: #CCC #CCC #BBB; padding: 6px 0; background: url(http://images.zap2it.com/zc/ssl-top-grd.gif) repeat-x bottom; height: 1%; position: relative; z-index: 10; line-height: 16px;
+}
+#zc-ssg-logo {
+    float: left; margin: 2px 8px 8px; border: 1px solid #333; background: #FFF;
+}
+h1#zc-ssg-st {
+    font: bold 27px/43px Tahoma, Geneva, sans-serif; margin: 0 0 -6px 8px; color: #173660; position: relative; top: -6px;
+}
+#zc-channel-functions {
+    float: right; display: inline; margin-right: 8px;
+}
+#zc-make-favorite,
+#zc-rem-favorite {
+    line-height: 16px;
+}
+#zc-ssg-selView {
+    margin: 0 4px 0 8px;
+}
+.zc-channel-view#zc-shell #zc-bar {
+    float: left; width: 15%; text-align: right; background: url(http://images.zap2it.com/tvlistings/zcore-channel-time-bg.png) repeat;
+}
+* html .zc-channel-view#zc-shell #zc-bar {
+    position: absolute; left: 0;
+}
+.zc-channel-view#zc-shell #zc-bar div.zc-time-zone span,
+.zc-channel-view#zc-shell #zc-bar div div {
+    padding: 0 12px; color: #FFF; text-align: right; font-family: Helvetica, Arial, sans-serif;
+}
+.zc-channel-view#zc-shell #zc-bar div.zc-time-zone {
+    padding-top: 12px; font-size: 9px !important;
+}
+.zc-channel-view#zc-shell #zc-bar div.zc-program-times {
+    padding-top: 7px;
+}
+.zc-channel-view#zc-shell #zc-bar div.zc-program-times div {
+    height:115px; padding-top:5px; vertical-align:top; font-size:11px;
+}
+.zc-channel-view#zc-shell #zc-day-nav-top,
+.zc-channel-view#zc-shell #zc-day-nav-bottom,
+.zc-channel-view#zc-shell #zc-channel-grid #zc-day-nav-hover {
+    width:100%; height:28px; float:none;
+}
+* html .zc-channel-view#zc-shell .zc-day-nav {
+    background: url(http://images.zap2it.com/tvlistings/zcore-channel-day-bg-odd.png) repeat-x 0 0;
+}
+.zc-channel-view#zc-shell #zc-day-nav-bottom {
+    border-top: 1px solid #999;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day-nav-left {
+    background: url(http://images.zap2it.com/tvlistings/zcore-day-nav-left.png) no-repeat 0 0; width:25px; height:27px !important; cursor:pointer; float:left; border-bottom:1px solid #999;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day-nav-right {
+    background: url(http://images.zap2it.com/tvlistings/zcore-day-nav-right.png) no-repeat -1px 0; width:24px; height:27px !important; cursor:pointer; float:right; border-bottom:1px solid #999;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day-nav-left.zc-day-nav-end {
+    width:24px; height:28px !important; float:left; background:#FFF !important; cursor:default !important; border-right:1px solid #CCC; border-bottom:none;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day-nav-right.zc-day-nav-end {
+    width:23px; height:28px !important; float:right; background:#FFF !important; cursor:default !important; border-right:1px solid #CCC; border-bottom:none;
+}
+#zc-shell.zc-channel-view .zc-day-nav .zc-days {
+    margin:0 24px 0 25px;background:url(http://images.zap2it.com/tvlistings/zcore-channel-day-bg-odd.png) repeat-x 0 0;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-days .zc-day {
+    width:20%; height:27px; overflow:hidden; border-bottom:1px solid #999; float:left; color:#444; font:bold 11px Helvetica, Arial, sans-serif;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-days .zc-day-last {
+    float:none; background:url(http://images.zap2it.com/zc/CCCx1x1.gif) repeat-y right; width:auto;
+}
+* html .zc-channel-view#zc-shell .zc-day-nav .zc-days .zc-day-last {
+    width:19.9%; float:left;
+}
+*:first-child+html .zc-channel-view#zc-shell .zc-day-nav .zc-days .zc-day-last {
+    width:auto;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-days .zc-day-last span {
+    float:left; background:transparent;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day span {
+    display:block; width:auto; height:auto; border:none; padding:8px 5px !important; color:#000; font:bold 11px Helvetica, Arial, sans-serif; background:url(http://images.zap2it.com/zc/CCCx1x1.gif) repeat-y right;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day-odd {
+    background: url(http://images.zap2it.com/tvlistings/zcore-channel-day-bg-odd.png) repeat-x 0 0;
+}
+.zc-channel-view#zc-shell .zc-day-nav .zc-day-even {
+    background: url(http://images.zap2it.com/tvlistings/zcore-channel-day-bg-even.png) repeat-x 0 0;
+}
+.zc-channel-view#zc-shell #zc-item {
+    width: 85%;
+    margin-left: 15%;
+}
+.zc-channel-view#zc-shell #zc-channel-content {
+    margin: 0 24px 0 25px;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day {
+    float:left; overflow:hidden; position:relative; width:20%; background:url(http://images.zap2it.com/zc/CCCx1x1.gif) repeat-y right; font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day-last {
+    float:none; width:auto; overflow:hidden;
+}
+* html .zc-channel-view#zc-shell #zc-channel-content .zc-day-last {
+    float:left; width:auto;
+}
+*:first-child+html .zc-channel-view#zc-shell #zc-channel-content .zc-day-last {
+    width:auto;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program {
+    width:100%; background:#FFF url(http://images.zap2it.com/zc/CCCx1x1.gif) repeat-x bottom; font-size:11px; overflow:hidden; margin-left:-1px;
+}
+* html .zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program {
+    position:relative;
+}
+*:first-child+html .zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program {
+    position:relative;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program span {
+    padding:4px 4px 0 6px; display:block;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program .zc-program-title {
+    margin-top:1px;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program .zc-program-title a {
+    font-weight:bold; line-height:1.2; cursor:pointer;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program .zc-program-episode {
+    font-style:italic;
+}
+.zc-channel-view#zc-shell #zc-channel-content .zc-day .zc-program .zc-program-description {
+    color:#666;
+}
+.zc-channel-view#zc-shell #zc-channel-grid .zc-day-nav {
+    width:24px; height:100%; float:left; border-right:1px solid #8BB8D7; background:url(http://images.zap2it.com/tvlistings/zcore-day-grid-nav-left.png) repeat-y left top; cursor:pointer; z-index:10;
+}
+.zc-channel-view#zc-shell #zc-channel-grid #zc-day-nav-hover {
+    cursor:default; border-right:0 none;
+}
+.zc-channel-view#zc-shell #zc-channel-grid #zc-day-nav-right {
+    width:22px; background:url(http://images.zap2it.com/tvlistings/zcore-day-grid-nav-right.png) repeat-y -1px 0; float:right;
+}
+.zc-channel-view#zc-shell #zc-channel-grid #zc-day-nav-left.zc-day-nav-end {
+    background:#FFF url(http://images.zap2it.com/zc/CCCx1x1.gif) repeat-x bottom; cursor:default; border-right:1px solid #CCC;
+}
+.zc-channel-view#zc-shell #zc-channel-grid #zc-day-nav-right.zc-day-nav-end {
+    background:#FFF url(http://images.zap2it.com/zc/CCCx1x1.gif) repeat-x bottom; cursor:default; border-right:1px solid #CCC;
+}
+#zc-shell.zc-channel-view #zc-item.zc-favorites #zc-channel-content .zc-favorite {
+    background-color:#EED5FD;
+}
+#zc-shell.zc-channel-view #zc-item.zc-sports #zc-channel-content .zc-genre-Sports {
+    background-color:#F2D2AE;
+}
+#zc-shell.zc-channel-view #zc-item.zc-movie #zc-channel-content .zc-genre-Movie {
+    background-color:#F5CCD2;
+}
+#zc-shell.zc-channel-view #zc-item.zc-news #zc-channel-content .zc-genre-News {
+    background-color:#F0E6AA;
+}
+#zc-shell.zc-channel-view #zc-item.zc-children #zc-channel-content .zc-genre-Children {
+    background-color:#B8E79F;
+}
+img {
+    border: medium none;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: left;
+}
+#zc-wrapper {
+    float: left;
+    font: 11px/1.4 Helvetica,Arial,sans-serif;
+}
+#zc-wrapper * {
+    color: #333333;
+    font-family: Helvetica,Arial,sans-serif;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#zc-shell {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    text-align: left;
+}
+.subnav-new-feature {
+    background: url("http://images.zap2it.com/html/images/new-highlight.png") no-repeat scroll left top transparent;
+    float: right;
+    height: 25px;
+    position: relative;
+    right: 170px;
+    top: -8px;
+    width: 41px;
+}
+#zc-wrapper .new-feature {
+    background: url("http://images.zap2it.com/html/images/new-highlight.png") no-repeat scroll right top transparent;
+    float: left;
+    height: 40px;
+    width: 41px;
+    margin-top: 0px !important;
+    top: -12px;
+    position: relative;
+}
+#zc-wrapper .zc-channel-view, #zc-wrapper .zc-grid {
+    border: 0 none;
+}
+#zc-wrapper-inner {
+    width: 780px;
+}
+#zc-shell table {
+    border-collapse: collapse;
+}
+#zc-item {
+    margin: 10px;
+}
+.zc-twocolumn #zc-bar {
+    float: right;
+    font-size: 10px;
+    padding: 0 10px 10px;
+    width: 300px;
+}
+#zc-bar .zc-adspace {
+    margin: 15px 0;
+}
+.zc-adspace iframe {
+    width: 300px;
+}
+#zc-shell .zc-ad-leaderboard {
+    display: block;
+    margin: auto;
+    text-align: right;
+    width: 728px;
+}
+.zc-clear {
+    clear: both;
+}
+#zc-shell h1 {
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+#zc-shell h2 {
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+#zc-shell h3 {
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+}
+#zc-wrapper a, #zc-wrapper a:link, #zc-wrapper a:visited, #zc-wrapper a:hover, #zc-wrapper a:active{
+    border: medium none;
+    color: #004276;
+    cursor: pointer;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bold;
+    outline: medium none;
+    text-decoration: none;
+}
+.link{
+    color: #004276 !important;
+    cursor:pointer;
+}
+a.zc-close, a.zc-close:link, a.zc-close:visited, a.zc-close:hover, a.zc-close:active {
+    background: url("http://images.zap2it.com/zc/close.gif") no-repeat scroll left center transparent;
+    color: #004276;
+    cursor: pointer;
+    float: right;
+    font: 10px Helvetica,Arial,sans-serif !important;
+    padding-left: 12px !important;
+    text-decoration: none;
+}
+#zc-wrapper a:hover, a.zc-close:hover {
+    text-decoration: underline;
+}
+#zc-shell .zc-normal-link {
+    font-weight: normal;
+}
+.zc-tn {
+    position: relative;
+}
+.zc-tn-i {
+    background: none repeat scroll 0 0 #F0F4F5;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    height: 34px;
+}
+* html .zc-tn-i {
+    position: relative;
+}
+#zc-tn-top {
+    border-top: 1px solid #CCCCCC;
+}
+.zc-tn-l {
+    background: url("http://images.zap2it.com/zc/arrow-left.gif") no-repeat scroll center center transparent;
+    height: 34px;
+    left: 1px;
+    margin-top: -17px !important;
+    position: absolute;
+    top: 50%;
+    width: 35px;
+}
+.zc-tn-r {
+    background: url("http://images.zap2it.com/zc/arrow-right.gif") no-repeat scroll center center transparent;
+    height: 34px;
+    margin-top: -17px !important;
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    width: 35px;
+}
+.zc-tn-c {
+    float: right;
+    overflow: hidden;
+}
+.zc-tn-z {
+    float: left;
+    font-size: 9px;
+    height: 29px;
+    line-height: 29px;
+    padding: 5px 3px 0 0 !important;
+    width: 20px;
+}
+.zc-tn-t {
+    float: left;
+    font-size: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 0 0 !important;
+    text-indent: 6px;
+}
+#zc-grid {
+    position: relative;
+}
+.zc-row {
+    border-collapse: separate !important;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+.zc-st {
+    background: url("http://images.zap2it.com/zc/CCCx1x1.gif") repeat-y scroll left center transparent;
+    border-bottom: 1px solid #CCCCCC !important;
+    border-right: 1px solid #CCCCCC !important;
+    height: 70px;
+    padding: 3px 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+}
+.zc-pg {
+    background: url("http://images.zap2it.com/zc/CCCx1x1.gif") repeat-y scroll right center transparent;
+    border-bottom: 1px solid #CCCCCC !important;
+    cursor: pointer;
+    height: 70px;
+    padding: 3px 0 !important;
+    text-align: left;
+    vertical-align: top;
+}
+.zc-st-n {
+    display: block;
+    line-height: normal;
+    margin: 4px 0 0 !important;
+}
+.zc-st-c {
+    color: #004276 !important;
+    display: block;
+    font-weight: bold;
+    line-height: normal;
+    margin: 2px 0 0 !important;
+}
+a.zc-st-a:hover .zc-st-c {
+    text-decoration: underline;
+}
+.zc-st img {
+    border: 0 none;
+    display: block;
+    margin: 2px auto 4px !important;
+}
+.zc-pg-t {
+    color: #004276 !important;
+    display: block;
+    font-weight: bold;
+    line-height: 1.2;
+    max-height: 26px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 1px 6px !important;
+}
+a.zc-pg:hover .zc-pg-t {
+    text-decoration: underline;
+}
+.zc-pg-e {
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 1.2;
+    padding: 1px 6px !important;
+}
+.zc-pg-y {
+    display: block;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 1px 6px !important;
+}
+.zc-pg-d {
+    color: #666666;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 1px 6px !important;
+}
+.zc-pg-s {
+    background-color: #F0F4F5 !important;
+    border-bottom: 0 none !important;
+    padding-bottom: 4px !important;
+}
+.zc-pg-s .zc-pg-e, .zc-pg-s .zc-pg-y, .zc-pg-s .zc-pg-d, .zc-pg-s .zc-icons, .zc-pg-s .zc-ic-s {
+    visibility: hidden;
+}
+#zc-dt {
+    background: none repeat scroll 0 0 #F0F4F5;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    clear: left;
+    min-height: 30px;
+    padding: 12px 0;
+    position: relative;
+}
+#zc-dt-img {
+    border: 1px solid #004276;
+    float: left;
+    height: 100px;
+    padding: 1px;
+    width: 133px;
+    cursor: pointer;
+}
+#zc-dt-mvimg {
+    border: 1px solid #004276;
+    float: left;
+    height: 135px;
+    padding: 1px;
+    width: 90px;
+    cursor: pointer;
+}
+span#zc-dt-t, a#zc-dt-t:link, a#zc-dt-t:visited {
+    color: #004276;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-right: 6px;
+}
+#zc-wrapper a#zc-dt-t:active, #zc-wrapper a#zc-dt-t:hover, #zc-wrapper a#zc-dt-e-a:active, #zc-wrapper a#zc-dt-e-a:hover {
+    text-decoration: underline;
+}
+#zc-dt-e {
+    display: block;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.2;
+    margin: 3px 0 -1px;
+    padding: 1px 6px 1px 0;
+}
+a#zc-dt-e-a:link, a#zc-dt-e-a:visited {
+    font-size: 13px !important;
+    margin-right: 3px;
+}
+a.zc-dt-m-a:link, a.zc-dt-m-a:visited, a.zc-dt-m-a:active {
+    font-size: 13px !important;
+    text-decoration: underline !important;
+}
+span#zc-dt-t, a#zc-dt-t:hover, a#zc-dt-e-a:hover, a#zc-dt-m-a:hover {
+    text-decoration: none;
+}
+#zc-dt-e-o {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.2;
+    margin-top: 3px;
+    white-space: nowrap;
+}
+#zc-dt-sen {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 3px;
+    padding: 0 6px 1px 0;
+}
+#zc-dt-y {
+    display: block;
+    font-size: 13px;
+    line-height: 1.2;
+    margin-top: 3px;
+    padding: 1px 6px 1px 0;
+}
+#zc-dt-r {
+    display: block;
+    font-size: 13px;
+    line-height: 1.2;
+    padding: 1px 6px 1px 0;
+}
+#zc-dt-g {
+    margin-top: 2px;
+}
+#zc-dt-d {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-top: 3px;
+    padding: 0 6px 1px 0;
+}
+#zc-dt-icons {
+    margin: 6px 0 0 -3px !important;
+    padding-bottom: 2px !important;
+}
+#zc-dt .zc-ic {
+    font-size: 12px !important;
+}
+#zc-dt-i {
+    padding-left: 12px;
+}
+.zc-dt-hasNoImg {
+    height: 100%;
+}
+.zc-dt-hasImg {
+    min-height: 104px;
+}
+* html .zc-dt-hasImg {
+    height: 104px;
+}
+#zc-dt-c {
+    height: 13px;
+    margin: 0 10px -13px 0;
+    text-align: right;
+}
+#zc-dt-c-a {
+    float: none;
+}
+#zc-dt-m {
+    margin: 5px 0 -2px;
+}
+#zc-dt-v {
+    margin-top: 2px;
+}
+#zc-dt-s {
+    clear: left;
+    display: block;
+    margin-top: 3px;
+}
+#zc-dt-s-t {
+    font-weight: bold;
+    padding-right: 5px;
+}
+#zc-dt-ad {
+    clear: left;
+    height: 90px;
+    padding-top: 10px;
+}
+.zc-grid-ad {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    clear: left;
+    padding: 5px 0 !important;
+}
+/* .zc-ad-leaderboard iframe {
+    height: 90px;
+    width: 728px;
+} */
+#zc-wrapper .zc-dt-links {
+    float: right;
+    margin: 18px 12px 0 0;
+    overflow: hidden;
+    width: 219px;
+}
+#zc-wrapper .zc-narrow .zc-dt-links {
+    float: right;
+    margin: 18px 6px 0 0;
+    overflow: hidden;
+    width: 219px;
+}
+#zc-wrapper .zc-dt-links li {
+    list-style: none inside none;
+    padding: 1px 0;
+}
+#zc-wrapper .zc-dt-links li a {
+    padding: 2px 0 1px 25px;
+}
+#zc-wrapper .zc-dt-copy {
+    float: left;
+    margin: 0 12px 0 0;
+    overflow: hidden;
+}
+#zc-wrapper .zc-dt-hasImg .zc-dt-copy {
+    margin: 0 12px;
+}
+#zc-wrapper .zc-narrow .zc-dt-copy {
+    float: left;
+    margin: 0 6px 0 0;
+    overflow: hidden;
+}
+#zc-wrapper .zc-narrow .zc-dt-hasImg .zc-dt-copy {
+    margin: 0 6px;
+}
+#zc-grid.zc-favorites .zc-g-F {
+    background-color: #EED5FD;
+}
+#zc-grid.zc-sports .zc-g-S {
+    background-color: #F2D2AE;
+}
+#zc-grid.zc-movie .zc-g-M {
+    background-color: #F5CCD2;
+}
+#zc-grid.zc-news .zc-g-N {
+    background-color: #F0E6AA;
+}
+#zc-grid.zc-children .zc-g-C {
+    background-color: #B8E79F;
+}
+#zc-shell .zc-icons {
+    font-size: 0;
+    margin: 7px 0 0 4px;
+    padding-bottom: 4px;
+}
+#zc-shell .zc-ic {
+    background: none repeat scroll 0 0 transparent;
+    border-left: 0 solid #CCCCCC;
+    display: inline;
+    font-size: 9px;
+    line-height: 14px;
+    padding: 0 2px !important;
+    white-space: nowrap;
+}
+.zc-ic-s-ne, .zc-ic-s {
+    display: block;
+    font-size: 9px !important;
+    line-height: 9px;
+    margin: 7px 0 0 -1px !important;
+    padding: 0 6px 4px !important;
+    white-space: nowrap;
+}
+.zc-ic-ne, .zc-ic-s-ne, #zc-dt-e-o-n {
+    background-color: #1E75BB !important;
+    color: #FFFFFF !important;
+    display: inline !important;
+    font-weight: bold !important;
+    padding: 2px !important;
+}
+#zc-ic-ne-s {
+    display: block;
+    font-size: 12px;
+}
+.zc-ic-vd {
+    background: url("http://images.zap2it.com/zc/icon_video.gif") no-repeat scroll center center transparent !important;
+}
+#zc-dt-ic-vd {
+    background-position: 10px center !important;
+}
+#zc-shell .zc-ic-vd-a:link, #zc-shell .zc-ic-vd-a:visited, #zc-shell a.zc-ic-vd-a:hover, #zc-shell .zc-ic-vd-a:active {
+    display: inline;
+    font-size: 9px !important;
+    height: 10px;
+    line-height: 9px;
+    white-space: pre;
+}
+.zc-ic-live, #zc-dt-e-o-l {
+    background-color: #1B905B !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    padding: 2px !important;
+}
+.zc-ic-premiere, .zc-ic-finale, #zc-dt-e-o-p, #zc-dt-e-o-f {
+    background-color: #8E4C8A !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    padding: 2px !important;
+}
+.zc-ic-live, .zc-ic-premiere, .zc-ic-finale {
+    display: inline !important;
+}
+#zc-dt-e-o-l, #zc-dt-e-o-n, #zc-dt-e-o-p, #zc-dt-e-o-f {
+    display: block !important;
+    float: left;
+    margin-right: 6px;
+}
+#zc-dt-icons .zc-ic {
+    border-left: 1px solid #CCCCCC;
+}
+.zc-pg .zc-ic-cc, .zc-pg .zc-ic-tvratings, .zc-icons .zc-ic-cc, .zc-icons .zc-ic-tvratings, #zc-dt-icons .zc-ic-span {
+    display: none !important;
+}
+#zc-dt-icons .zc-ic-cc, #zc-dt-icons .zc-ic-tvratings {
+    display: inline !important;
+}
+#zc-item fieldset, #zc-item .zc-confirmation {
+    background: none repeat scroll 0 0 #F0F4F5;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 0;
+    padding: 10px;
+}
+fieldset#zc-tivo-registration-link-container {
+    background: none repeat scroll 0 0 #FCFCFC;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+#zc-item .zc-tivo {
+    background: url("http://images.zap2it.com/zc/tivo_bg.gif") no-repeat scroll right 10px #F0F4F5;
+    min-height: 150px;
+    padding-right: 10px;
+}
+* html #zc-item .zc-tivo {
+    height: 160px;
+}
+#zc-item .zc-confirmation {
+    padding-right: 140px;
+}
+#zc-tivo-innerwrapper {
+    margin-right: 140px;
+}
+#zc-tivo-image-link {
+    float: right;
+    height: 150px;
+    width: 125px;
+}
+#zc-item .zc-tivo-h3 {
+    margin: 12px 0 4px;
+}
+#zc-item form input, #zc-item form select {
+    font-size: 11px;
+    vertical-align: middle;
+    width: 16em;
+}
+#zc-item form input[type="submit"], #zc-item input[type="button"] {
+    padding: 3px;
+}
+#zc-item form label {
+    display: inline;
+    float: none;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    width: auto;
+}
+#zc-tivo-reg-link-icon {
+    vertical-align: middle;
+}
+#zc-item form input.submit, #zc-item form table input, #zc-item form dt.submit input, #zc-item .optIn input {
+    width: auto !important;
+}
+#zc-item .optIn label {
+    font-size: 11px;
+    font-weight: normal;
+}
+#zc-item form dl {
+    margin: 10px 0;
+}
+#zc-item form dt {
+    clear: left;
+    float: left;
+    padding: 0 4px 0 0;
+    text-align: right;
+    width: 12em;
+}
+#zc-item dt.submit {
+    float: none;
+    padding: 0;
+    text-align: left;
+    width: auto;
+}
+#zc-item form dd {
+    margin: 0 0 1em 12.5em;
+}
+#zc-item dt.optIn {
+    width: auto;
+}
+#zc-item dd.optIn {
+    margin: 0 0 1em;
+}
+#zc-item .zc-tivo-radio {
+    font-weight: normal;
+    width: auto;
+}
+#zc-item #genderMale, #zc-item #genderFemale {
+    margin: 0 6px;
+    width: auto;
+}
+#zc-item dd.zc-note {
+    color: #666666;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.2;
+    margin: -0.75em 0 1em 13.75em;
+}
+#zc-item dd.zc-note .zc-normal-link {
+    color: #666666;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.2;
+}
+#zc-item .zc-tivo-ol {
+    margin: 0.5em 0 1em 3em;
+}
+#zc-item .zc-tivo-ol-li {
+    list-style: decimal outside none;
+}
+#zc-item .zc-column {
+    float: left;
+    margin: 10px 0 0;
+    text-align: center;
+}
+#zc-item .zc-column-img {
+    margin: 6px 0 10px;
+}
+#zc-item p.zc-required {
+    font-style: italic;
+}
+#zc-item p.zc-error {
+    background: url("http://images.zap2it.com/tvlistings/error.png") no-repeat scroll 0 50% transparent;
+    margin: 0 0 0.75em;
+    padding: 0 0 0 20px;
+}
+#forgottenPasswordForm .zc-required {
+    text-align: left;
+}
+#forgottenPasswordForm .zc-note {
+    font-size: 10px;
+    line-height: 1.2;
+}
+#zc-ratingHeading {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 2px;
+}
+#zc-ratingBox {
+    height: 16px;
+    margin: 3px auto 0 0;
+    position: relative;
+    width: 85px;
+}
+.zc-mvRatingBox {
+    width: 68px;
+}
+.zc-bgBox {
+    background: url("http://images.zap2it.com/zc/emptystar.gif") repeat-x scroll 0 0 transparent;
+    height: 16px;
+}
+.zc-coveringBox {
+    background: url("http://images.zap2it.com/zc/fullstar.gif") repeat-x scroll 0 0 transparent;
+    cursor: pointer;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.zc-mvCoveringBox {
+    cursor: default;
+    position: static;
+}
+.zc-empty-star {
+    background-image: url("http://images.zap2it.com/zc/emptystar.gif");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    width: 17px;
+}
+.zc-full-star {
+    background-image: url("http://images.zap2it.com/zc/fullstar.gif");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    width: 17px;
+}
+#zc-ratingResult {
+    margin-top: 3px;
+}
+#zc-ratingText {
+    display: none;
+}
+#zc-shell .zc-ratingBox-mini {
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 50px;
+}
+.zc-ratingBox-mini .zc-empty-star {
+    background-image: url("http://images.zap2it.com/zc/emptystar-mini.gif");
+    cursor: default;
+    height: 10px;
+    width: 10px;
+}
+.zc-ratingBox-mini .zc-full-star {
+    background-image: url("http://images.zap2it.com/zc/fullstar-mini.gif");
+    cursor: default;
+    height: 10px;
+    width: 10px;
+}
+.zc-ratingBox-mini .zc-coveringBox {
+    background-image: url("http://images.zap2it.com/zc/fullstar-mini.gif");
+    cursor: default;
+    height: 10px;
+}
+* html #zc-shell .zc-ratingBox-mini .zc-coveringBox {
+    position: relative;
+    top: -13px;
+}
+#zc-shell .adGoogle {
+    border: medium none;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1.1;
+    margin: 20px 10px;
+    padding: 0 0 4px;
+}
+#zc-bar .adGoogle {
+    margin: 20px 0;
+}
+#zc-shell .itemHeading {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+    text-align: left;
+}
+#zc-shell .adGoogle h1 {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 3px solid #666666;
+    color: #666666 !important;
+    font: bold 10px/14px Arial,Helvetica,sans-serif !important;
+    margin: 0 !important;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+}
+#zc-shell .GoogleAd {
+    margin: 4px 0 !important;
+}
+#zc-shell .adGoogle br {
+    line-height: 0;
+}
+#zc-shell .GoogleAd br {
+    line-height: 4px;
+}
+#zc-shell .GoogleAd .ad-link {
+    line-height: 1.25;
+}
+#zc-shell .GoogleAd .ad-text {
+    color: #666666;
+    cursor: default;
+    font-weight: normal;
+    text-decoration: none;
+}
+#zc-shell .GoogleAd .visible-url {
+    color: #666666;
+    font-weight: normal;
+}
+#zc-make-favorite, #zc-rem-favorite, #zc-emailto-friend, #zc-play-trailer, #zc-soc-a {
+    line-height: 20px;
+    padding: 2px 0 2px 22px;
+}
+#zc-make-favorite {
+    background: url("http://images.zap2it.com/zc/add-favorite.gif") no-repeat scroll 0 0 transparent;
+}
+#zc-rem-favorite {
+    background: url("http://images.zap2it.com/zc/rem-favorite.gif") no-repeat scroll 0 0 transparent;
+}
+#zc-emailto-friend {
+    background: url("http://images.zap2it.com/zc/emailsh.gif") no-repeat scroll 0 0 transparent;
+}
+#zc-play-trailer {
+    background: url("http://images.zap2it.com/zc/trailer.gif") no-repeat scroll 0 0 transparent;
+}
+#zc-tivo {
+    background: url("http://images.zap2it.com/tvlistings/tivo.png") no-repeat scroll 0 0 transparent;
+    padding: 4px 0 4px 20px;
+}
+#zc-soc-a {
+    background: url("http://images.zap2it.com/zc/icon_share.gif") no-repeat scroll 0 0 transparent;
+}
+#zc-pd-email-data {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    bottom: -30px;
+    left: 150px;
+    padding: 7px 10px 10px;
+    position: absolute;
+    width: 360px;
+    z-index: 100;
+}
+.zc-detail #zc-pd-email-data {
+    bottom: auto;
+    left: 0;
+    top: 25px;
+}
+#zc-pd-email-data h4 {
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#zc-pd-email-data dt {
+    float: none;
+    font-weight: normal;
+    margin: 5px 0 1px;
+}
+#zc-pd-email-data dd {
+    float: none;
+}
+#zc-pd-email-data .zc-pd-email-buttons {
+    margin-top: 10px;
+}
+#zc-pd-email-data .zc-pd-email-buttons input {
+    margin-right: 8px;
+}
+#zc-pd-email-data #customMessage, #zc-pd-email-data #toEmailId, #zc-pd-email-data #fromEmailId {
+    font-size: 12px;
+    padding: 2px 1px 1px;
+}
+#zc-server-msg {
+    color: #CC0000;
+}
+#zc-login-shell {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    position: absolute;
+    width: 280px;
+    z-index: 2147483647;
+}
+#zc-login-shell h2 {
+    font-size: 14px;
+    margin: 0 0 2px 1px;
+}
+#zc-login-shell fieldset {
+    background: none repeat scroll 0 0 #F0F4F5;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 0;
+    padding: 10px;
+}
+#zc-login-shell input {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 11px;
+    padding: 2px;
+}
+#zc-login-shell dd input {
+    width: 16em;
+}
+#zc-login-shell-dl {
+    margin: 10px 0 5px;
+}
+#zc-login-fp-l {
+    margin-left: 8px;
+    white-space: nowrap;
+}
+#zc-login-shell dd {
+    margin: 0 0 12px;
+}
+#zc-login-shell label {
+    font-weight: bold;
+}
+#zc-login-error {
+    margin: 0 0 8px;
+}
+.zctooltip, #zc-tooltip {
+    color: #000000;
+    display: none;
+    height: 262px;
+    padding: 0;
+    position: absolute;
+    width: 300px;
+    z-index: 1000;
+}
+.zc-icad-c {
+    background-color: #999999;
+    height: 12px;
+    padding-right: 2px !important;
+    text-align: right;
+}
+.zc-icad-c-a:link, .zc-icad-c-a:visited, a.zc-icad-c-a:hover, .zc-icad-c-a:active {
+    color: #FFFFFF !important;
+    font: bold 11px/1 Arial,Helvetica,sans-serif !important;
+    text-decoration: none !important;
+}
+a.zc-icad-c-a:hover {
+    color: #CC0000 !important;
+}
+.zc-sponsored {
+    background: url("http://images.zap2it.com/tvlistings/zc-sponsor-bg.png") no-repeat scroll 1px 50% #CCCCCC !important;
+}
+
+#aff_header {
+    border-collapse: collapse;
+}
+#aff_leftbar, #aff_rightbar {
+    border-collapse: collapse;
+    float: left;
+}
+#aff_footer {
+    border-collapse: collapse;
+    clear: both;
+}
+#aff_header_inner, #aff_footer_inner, #aff_leftbar_inner, #aff_rightbar_inner {
+    padding: 0;
+    vertical-align: top;
+}
+#zc-footer {
+    background: none repeat scroll 0 0 #Ffffff;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    clear: both;
+    color: #333333;
+    line-height: normal;
+    padding-top: 1px;
+    position: relative;
+}
+#zc-topbar a:link, #zc-topbar a:visited, #zc-topbar a:hover, #zc-topbar a:active {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: normal;
+}
+#zc-footer .zc-footer-link:link, #zc-footer .zc-footer-link:visited, #zc-footer a.zc-footer-link:hover, #zc-footer .zc-footer-link:active {
+    font-weight: normal;
+    line-height: normal;
+}
+#zc-footer-info {
+    margin: 10px 0;
+}
+#zc-footer-home {
+    background: url("http://image-cdn.zap2it.com/static/logos/zap2it-small-logo.png") repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 19px;
+    margin: 0 8px 0 10px;
+    text-indent: -9000px;
+    width: 95px;
+}
+#zc-footer-nav {
+    line-height: 19px;
+    height: 19px;
+    text-align: left;
+    position: relative;
+}
+#zc-footer-nav-copyright {
+    background: none repeat scroll 0 0 transparent;
+    display: inline;
+    padding-right: 4px;
+}
+#zc-footer-nav-tms {
+    background: none repeat scroll 0 0 transparent;
+    display: inline;
+}
+#zc-footer-nav-tvlistings {
+    position: absolute;
+    right: 10px;
+    display: inline;
+}
+#zc-footer-nav-privacy, #zc-footer-nav-faq, #zc-footer-nav-mobile, #zc-footer-nav-tnc, #zc-footer-nav-ads {
+    background: url("http://images.zap2it.com/zc/separator.gif") no-repeat scroll 5px center transparent;
+    display: inline;
+    padding-left: 14px;
+}
+#zc-topbar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-size: 10px;
+    line-height: 26px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 100;
+}
+#zc-topbar-leaderboard, #zc-footer-leaderboard {
+    background: url("http://images.zap2it.com/tvlistings/topbar/topbar-leaderboard-bg.gif") no-repeat scroll 0 50% transparent;
+    font-size: 1px;
+    margin: auto;
+    padding: 0 0 0 11px;
+    width: 728px;
+}
+#gpt-728x90-top-tvl{
+    margin:auto;
+    width:728px;
+}
+#zc-wrapper .zc-leaderboard-wrapper {
+    text-align: center;
+    width: 100%;
+}
+#zc-footer .zc-leaderboard-wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px 0;
+}
+.zc-leaderboard-wrapper iframe {
+    height: 90px;
+    width: 728px;
+}
+#zc-topbar-features {
+    height: 1%;
+    padding-top: 10px;
+    position: relative;
+    text-align: left;
+    z-index: 100;
+}
+:root #zc-topbar-features-coverable {
+    clear: both;
+}
+* html #zc-topbar-features-coverable {
+    clear: both;
+    height: 100%;
+    position: relative;
+}
+#zc-topbar-local {
+    clear: left;
+    line-height: 11px;
+    padding: 7px 3px 10px 10px;
+    position: relative;
+    white-space: nowrap;
+    z-index: 9;
+}
+:first-child + html #zc-topbar-local {
+    margin-top: -10px;
+    padding-top: 4px;
+}
+#zc-topbar-preferences {
+    display: inline;
+}
+#zc-topbar-user {
+    float: left;
+    line-height: normal;
+    padding: 8px 0 0 10px;
+    white-space: nowrap;
+}
+.zc-ho-li {
+    background: url("http://images.zap2it.com/zc/separator.gif") no-repeat scroll 5px center transparent;
+    display: inline;
+    padding-left: 14px !important;
+    white-space: nowrap;
+}
+#zc-topbar-user-new, #zc-topbar-user-welcome, #zc-topbar-change-location, #zc-topbar-showtimes-now, #zc-topbar-showtimes-label {
+    background-image: none;
+    padding-left: 0 !important;
+}
+#zc-topbar-user-wc-n {
+    font-size: inherit;
+    font-weight: bold;
+    padding-right: 5px;
+}
+#zc-topbar-title {
+    float: left;
+    font: bold 20px Arial,Helvetica,sans-serif;
+    padding: 0 0 5px 10px;
+    text-transform: none;
+    width: auto;
+}
+a#zc-topbar-title-a:link, a#zc-topbar-title-a:visited, a#zc-topbar-title-a:hover, a#zc-topbar-title-a:active {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+}
+a#zc-topbar-print:link, a#zc-topbar-print:visited, a#zc-topbar-print:hover, a#zc-topbar-print:active {
+    background: url("http://images.zap2it.com/zc/print.gif") no-repeat scroll 0 bottom transparent;
+    color: #333333;
+    float: right;
+    margin: 5px 10px 0 5px;
+    padding: 3px 0 0 18px;
+    text-transform: uppercase;
+}
+a#zc-topbar-help:link, a#zc-topbar-help:visited, a#zc-topbar-help:hover, a#zc-topbar-help:active {
+    color: #333333;
+    float: right;
+    margin: 5px 10px 0 5px;
+    padding: 3px 0 0 20px;
+}
+#zc-topbar-help {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAk9JREFUeNqcU91rUmEY/ylnGrqp6cWqTSFd6WIxaq5t2XXEYBARLaIPYgS7MMK/oHZZEEZ5VUHdjBbBWFCDriLIKKrLImlaKwx1+TGbet5jenqe40dSXfXCc973nOf3ez5+73N0qqqic00HLx6hbZIsQOYhi5NFyZbvR+YWO7G6FplIbtpCu3w7gl6PGy5nH+ybbcjlC/jyNYlYPIH3Hz5GCBOmIIk2mYndZlP8wPgo9o/5odfp8OeqE+7Fqzd4/vI1NkplDwfQN32hiVE/xv17UMhlcebYFHZus7Tt/LlTyGezGCP/xL4RDc8PiXv0DriDI8NDEEoVifiKluXZ2xgsVhtOHD6IJ48fol5XceX6Lewd3s1tBIn3lDNPuvr7IapVyELB9oFBXLs5D4PRRO8C3sEhrbRCIQdZEVAURdODeRKr6nDYUJHF7wZZQ2r70eIClh7MY2ufE5dv3IUsK+RS4bDbGRVgsqdLMhBZbl0AkVVcmJnGSuwdjp6cwdnZUMOvawSWugwM9DA5/j2b9/X0dGtRW1nral0LZdxkQrmjKub/KG7wMc7kaDKV8rkkZzsyXSAuXb3dhlcqzazNlpLpFJ+iLNhyKp1BuVLRSqsIWet/9vghnJ4KYGnhDn0TFIBNoSpkMJ55eh65zNpaJPF5FYIEYVEEqd4oAajWatotyKQyq5/4tArGM09qFhNOfksGa7Wf6O3dAh6wuci9dp1CVDURU5k00o2Sw/+cbavVFrRYLDCbzTAajDQ4AqVSCcViEevrhb9n+3//ql8CDABqAyp171SImQAAAABJRU5ErkJggg==") no-repeat scroll 0 bottom transparent;
+}
+* html #zc-topbar-help {
+    background-image: none;
+}
+:first-child + html #zc-topbar-help {
+    background: url("http://images.zap2it.com/zc/faq.png") no-repeat scroll 0 bottom transparent;
+}
+#zc-topbar-tivo {
+    padding-top: 9px;
+}
+#zc-topbar-tivo-a {
+    background: url("http://images.zap2it.com/zc/recordtotivo.png") no-repeat scroll 0 0 transparent;
+    clear: right;
+    float: right;
+    height: 29px;
+    margin: -14px 12px 0 0;
+    width: 103px;
+}
+* html #zc-topbar-tivo-a {
+    background-image: none;
+}
+#zc-topbar-tivo-a.zc-linked {
+    background-image: url("http://images.zap2it.com/zc/recordtotivo_check.png");
+    width: 115px;
+}
+* html #zc-topbar-tivo-a.zc-linked {
+    background-image: none;
+}
+.zc-tv #zc-topbar-affiliate {
+    display: none;
+    padding-top: 4px;
+}
+#zc-topbar-affiliate-l {
+    background: url("http://image-cdn.zap2it.com/static/logos/zap2it-small-logo.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 19px;
+    margin-top: -4px;
+    width: 105px;
+}
+#zc-wrapper .zc-textBox {
+    border-color: #ABADB3 #DBDFE6 #E3E9EF #E2E3EA;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    font-size: 12px;
+    padding: 2px 2px 1px 4px;
+    vertical-align: middle;
+}
+#zc-wrapper .zc-textBox {
+    padding: 3px 2px 2px 4px;
+}
+#zc-wrapper .zc-textBox {
+    padding-top: 2px;
+}
+#zc-wrapper .zc-dropdown-default {
+    background: url("http://images.zap2it.com/zc/arrow-down.gif") no-repeat scroll center 9px transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: inline;
+    height: 19px;
+    left: -22px;
+    margin-right: -22px;
+    margin-top: 1px;
+    position: relative;
+    vertical-align: top;
+    width: 22px;
+}
+#zc-wrapper .zc-topbar-dropdown-container {
+    display: inline;
+    position: relative;
+}
+#zc-wrapper .zc-topbar-dropdown-link {
+    background: url("http://images.zap2it.com/zc/arrow-down.gif") no-repeat scroll right 60% transparent;
+    padding: 0 12px 0 2px;
+}
+#zc-wrapper .zc-topbar-dropdown {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    left: -3px;
+    min-width: 100%;
+    padding: 0 1px 0 2px;
+    position: absolute;
+    top: 16px;
+    z-index: 10;
+}
+#zc-wrapper .zc-topbar-dropdown-item {
+    display: block;
+    line-height: 1em !important;
+    padding: 0 3px 4px 2px;
+}
+a.zc-topbar-dropdown-item:hover {
+    background-color: #F0F4F5;
+}
+#zc-topbar #zc-topbar-timezone-popup {
+    padding-right: 10px;
+}
+#zc-topbar-timezone .zc-topbar-dropdown-item {
+    margin-right: -8px;
+    padding-right: 10px;
+}
+#zc-topbar-provider, #zc-topbar-station {
+    display: inline;
+    margin: 0 10px 0 0;
+}
+#zc-topbar-provider-name {
+    display: inline;
+}
+#zc-back-to-grid {
+    background: url("http://images.zap2it.com/zc/backtogrid.gif") no-repeat scroll left top transparent;
+    float: left;
+    height: 15px;
+    line-height: normal;
+    margin: 0 17px 9px 0;
+    padding: 4px 0 0 22px;
+}
+#zc-topbar-inputs {
+    background: none repeat scroll 0 0 #ffffff;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    clear: both;
+    height: 1%;
+    padding: 10px 10px 4px;
+    position: relative;
+    z-index: 8;
+}
+#zc-topbar-inputs:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+#zc-topbar-channel, #zc-topbar-date, #zc-topbar-time {
+    float: left;
+    position: relative;
+    width: 120px;
+    z-index: 2;
+}
+#channelSearch {
+    float: left;
+    width: 97px;
+}
+#dateText, #timeDropDown {
+    cursor: pointer;
+    float: left;
+    width: 97px;
+}
+#imgDateDropDown, #imgTimeDropDown {
+    float: left;
+    outline: 0 none;
+}
+#zc-channel-list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-size: 10px;
+    height: 150px;
+    left: 0;
+    padding: 7px 1px;
+    position: absolute;
+    top: 21px;
+    width: 105px;
+    z-index: 2;
+}
+#zc-topbar-time-dropdown {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    left: 0;
+    line-height: normal;
+    padding: 7px 1px;
+    position: absolute;
+    top: 23px;
+    width: 150px;
+    z-index: 1;
+}
+.zc-tb-tm-dd-d {
+    float: left;
+}
+#zc-topbar-time-dropdown .zc-tb-tm-dd-a {
+    display: block;
+    margin: 0 6px;
+    width: 60px;
+}
+a.zc-tb-tm-dd-a:hover, .zc-tb-tm-dd-a-hl {
+    background-color: #F0F4F5;
+}
+#zc-topbar-search {
+    display: inline;
+    float: right;
+    margin-right: 15px;
+    width: 156px;
+}
+#zc-wrapper .zc-search-input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B2B2B2;
+    color: #333333;
+    cursor: pointer;
+    display: inline;
+    font-size: 9px;
+    height: 19px;
+    line-height: 17px;
+    margin-left: 5px;
+    vertical-align: top;
+    width: 40px;
+}
+#zc-simple-search-submit {
+    float: left;
+}
+#zc-wrapper .zc-submit-go {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #B2B2B2;
+    color: #333333;
+    cursor: pointer;
+    display: inline;
+    font-size: 9px;
+    height: 19px;
+    line-height: 17px;
+    margin-left: 5px;
+    vertical-align: top;
+    width: 22px;
+}
+#searchTerm {
+    float: left;
+    width: 100px;
+}
+#zc-search-link {
+    float: right;
+    left: -2px;
+    position: relative;
+    top: -3px;
+    width: 47px;
+}
+#zc-advsea {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F0F4F5;
+    border-color: #CCCCCC #CCCCCC ;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 10px;
+    line-height: normal;
+    padding: 0 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+}
+* html #zc-advsea {
+    height: 115px;
+    top: 0;
+}
+#zc-advsea-hd {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+#zbSearchFormAdv {
+    margin-top: 7px;
+}
+#zc-advsea-top {
+    position: absolute;
+    top: 31%;
+}
+#zc-advsea-bottom {
+    position: absolute;
+    top: 65%;
+}
+#zc-limitSearch, #zc-advsea-limitFavs, #zc-advsea-limitHD, #zc-advsea input, #zc-advsea select {
+    display: inline;
+    vertical-align: middle !important;
+}
+#zc-advsea label {
+    display: inline;
+    float: none;
+    font-size: 11px;
+    font-weight: normal;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+#zc-advsea .zc-selectBox {
+    border-color: #ABADB3 #DBDFE6 #E3E9EF #E2E3EA;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 1px 1px 0;
+    width: 118px;
+}
+#zc-advsea .zc-selectBox option {
+    padding: 0 3px;
+}
+#zc-advsea-searchGenre.zc-selectBox {
+    width: 100px;
+}
+#zc-advsea-searchTerm {
+    margin-right: 8px;
+    width: 90px;
+}
+#zc-advsea-limitHD-lbl, #zc-advsea-limitFavs-lbl {
+    cursor: pointer;
+}
+#zc-advsea-limitHD-chk, #zc-advsea-limitFavs-chk {
+    cursor: pointer;
+    height: 14px;
+    margin-left: 8px;
+    width: 14px;
+}
+#zc-advsea-submit.zc-search-input {
+    height: 20px;
+    margin-left: 25px;
+}
+#zc-topbar .zc-cal {
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    left: 0;
+    position: absolute;
+    top: 22px;
+    width: 176px;
+    z-index: 1;
+}
+#zc-topbar .zc-cal-wday {
+    background-color: #004276;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    float: left;
+    font-size: 9px;
+    height: 18px;
+    line-height: 2;
+    text-align: center;
+    width: 24px;
+}
+#zc-topbar .zc-cal-date, #zc-topbar .zc-cal-date:link, #zc-topbar .zc-cal-date:visited, #zc-topbar a.zc-cal-date:hover, #zc-topbar .zc-cal-date:active {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    color: #004276;
+    float: left;
+    font-size: 9px;
+    height: 18px;
+    line-height: 2;
+    text-align: center;
+    text-decoration: none;
+    width: 24px;
+}
+#zc-topbar a.zc-cal-date:hover {
+    background-color: #F0F4F5;
+}
+#zc-topbar-btns {
+    background: none repeat scroll 0 0 #F0F4F5;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    clear: both;
+    height: 13px;
+    line-height: normal;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    position: relative;
+    width: auto;
+}
+#zc-topbar-showtimes {
+    float: left;
+    padding-left: 10px;
+    width:35%;
+}
+:root #zc-topbar-showtimes {
+    margin-top: 1px;
+}
+#zc-topbar-showtimes-label {
+    font-weight: bold;
+}
+#zc-topbar-genres {
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+    float:right;
+}
+#zc-topbar-genres .zc-topbar-genres-item {
+    background: none repeat scroll 0 0 transparent;
+    display: inline;
+    list-style: none outside none;
+    margin-right: 2px;
+}
+#zc-topbar-genres input {
+    cursor: pointer;
+    font-size: 10px;
+    height: 14px;
+    left: 1px;
+    position: relative;
+    vertical-align: text-top;
+    width: 14px;
+}
+:root #zc-topbar-genres input {
+    vertical-align: middle;
+}
+#zc-topbar-genres #zc-topbar-highlight-label {
+    padding: 1px 0 2px;
+    vertical-align: middle;
+}
+#zc-topbar-genres label {
+    cursor: pointer;
+    display: inline;
+    float: none;
+    margin-left: 1px;
+    padding: 1px 3px 2px;
+    vertical-align: middle;
+}
+#zc-topbar-genres-favorites label {
+    background: none repeat scroll 0 0 #C3A6DE;
+}
+#zc-topbar-genres-sports label {
+    background: none repeat scroll 0 0 #F2D2AE;
+}
+#zc-topbar-genres-movie label {
+    background: none repeat scroll 0 0 #F5CCD2;
+}
+#zc-topbar-genres-news label {
+    background: none repeat scroll 0 0 #F0E6AA;
+}
+#zc-topbar-genres-children label {
+    background: none repeat scroll 0 0 #B8E79F;
+}
+#zc-topbar-calendar-favorites label {
+    background: none repeat scroll 0 0 #D5D5D5;
+}
+#zc-wrapper #zc-item h1 {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 1px;
+}
+#zc-wrapper #zc-photogallery-container {
+    margin: 0;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative;
+}
+#zc-wrapper .photogal-center-column {
+    width: 300px;
+}
+#zc-wrapper .photogal-container-width {
+    width: 438px;
+}
+#zc-wrapper #zc-photogallery-container h1 {
+    border-bottom: 0 none;
+}
+#zc-wrapper h1#zc-photogal-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 8px 4px;
+}
+#zc-wrapper .zc-photogal-pagination {
+    clear: both;
+    font-size: 11px;
+    margin: 5px 0 0;
+    padding-bottom: 20px;
+}
+#zc-wrapper .zc-photogal-pagination-amount {
+    float: left;
+    font-family: Verdana,Geneva,sans-serif;
+    text-align: left;
+}
+#zc-wrapper .zc-photogal-pagination-nav {
+    float: right;
+    padding-right: 12px;
+}
+#zc-wrapper .zc-photogal-pagination-nav a, #zc-wrapper .zc-photogal-pagination-nav a:link, #zc-wrapper .zc-photogal-pagination-nav a:visited, #zc-wrapper .zc-photogal-pagination-nav a:hover, #zc-wrapper .zc-photogal-pagination-nav a:active {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 3px 0 3px 3px;
+}
+#zc-wrapper #zc-photogallery {
+    display: block;
+    padding-left: 4px;
+}
+#zc-wrapper ul.zc-photogal-pages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#zc-wrapper li.zc-photogal-pagenum {
+    display: inline;
+    margin: 1px;
+}
+#zc-wrapper .zc-photogal-previous {
+    display: inline;
+    margin-right: 3px;
+}
+#zc-wrapper .zc-photogal-next {
+    display: inline;
+    margin-left: 3px;
+}
+#zc-wrapper .zc-photogal-current {
+    color: #333333;
+    cursor: text;
+    display: inline;
+    font-weight: bold;
+}
+#zc-wrapper ul.zc-photogal-row {
+    clear: both;
+    list-style-type: none;
+    width: 100%;
+}
+#zc-wrapper li.zc-photogal-row-item {
+    display: inline;
+    float: left;
+    margin: 3px 0;
+}
+#zc-wrapper .four-per-row {
+    width: 24.5%;
+}
+#zc-wrapper .three-per-row {
+    width: 32.9%;
+}
+#zc-wrapper li.zc-photogal-row-item img {
+    border-width: 0;
+    display: inline;
+}
+#zc-wrapper .four-per-row img {
+    width: 100px;
+}
+#zc-wrapper .three-per-row img {
+    width: 94px;
+}
+#zc-wrapper #zc-photogallery-table {
+    clear: left;
+    margin: 0;
+}
+#zc-wrapper #zc-photogallery-table .zc-photogal-row a img {
+    display: inline-block !important;
+}
+#zc-wrapper h1#zc-photogal-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+#zc-wrapper h1#zc-photogal-title a:link, #zc-wrapper h1#zc-photogal-title a:hover, #zc-wrapper h1#zc-photogal-title a:visited, #zc-wrapper h1#zc-photogal-title a:active {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+}
+#zc-wrapper h1#zc-photogal-title a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: underline;
+}
+#zc-wrapper #zc-photodetail-container {
+    margin: 0;
+    overflow: hidden;
+    padding-top: 0;
+    position: relative;
+}
+#zc-wrapper #zc-photodetail-container h1 {
+    border-bottom: 0 none;
+}
+#zc-wrapper h1#zc-photodetail-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 12px 0 8px 4px;
+}
+#zc-wrapper h1#zc-photodetail-title a:link, #zc-wrapper h1#zc-photodetail-title a:active, #zc-wrapper h1#zc-photodetail-title a:visited {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 12px 0 8px 4px;
+    text-decoration: none;
+}
+#zc-wrapper h1#zc-photodetail-title a:hover {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 12px 0 8px 4px;
+    text-decoration: underline;
+}
+#zc-wrapper .zc-photodetail-pagination {
+    font-size: 11px;
+    margin: 5px 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#zc-wrapper .zc-photodetail-pagination-amount {
+    float: left;
+    vertical-align: middle;
+}
+#zc-wrapper .zc-photodetail-pagination-amount a:link, #zc-wrapper .zc-photodetail-pagination-amount a:active, #zc-wrapper .zc-photodetail-pagination-amount a:visited {
+    font-size: 11px;
+    text-decoration: none;
+}
+#zc-wrapper .zc-photodetail-pagination-amount a:hover {
+    font-size: 11px;
+    text-decoration: underline;
+}
+#zc-wrapper .zc-photodetail-pagination-nav {
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 135px;
+}
+#zc-wrapper #zc-photodetail {
+    display: block;
+    margin-left: 3px;
+}
+#zc-wrapper .zc-photodetail-previous {
+    float: left;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+#zc-wrapper a.zc-photodetail-previous-btn, #zc-wrapper a.zc-photodetail-next-btn {
+    background: url("http://images.zap2it.com/html/site_nav/gallery-nav.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 22px;
+    padding-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 60px;
+}
+#zc-wrapper .zc-photodetail-previous-btn:hover, #zc-wrapper .zc-photodetail-next-btn:hover {
+    background: url("http://images.zap2it.com/html/site_nav/gallery-nav-hover.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 22px;
+    padding-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 60px;
+}
+#zc-wrapper .zc-photodetail-previous-btn-disabled, #zc-wrapper .zc-photodetail-next-btn-disabled {
+    background: url("http://images.zap2it.com/html/site_nav/gallery-nav-unavailable.gif") no-repeat scroll 0 0 transparent;
+    color: #AAAAAA;
+    display: block;
+    height: 22px;
+    padding-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 60px;
+}
+#zc-wrapper .zc-photodetail-next {
+    float: right;
+    margin-left: 3px;
+}
+#zc-wrapper .zc-photodetail-current {
+    display: inline;
+}
+#zc-wrapper .zc-photodetail-current-btn {
+    border: 0 none;
+}
+#zc-wrapper #zc-photodetail-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#zc-wrapper #zc-photodetail-imageInfo {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 8px;
+}
+#zc-wrapper #zc-photodetail-desc {
+    margin-top: 5px;
+}
+#zc-wrapper #zc-photodetail-desc h1 {
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+}
+#zc-wrapper #zc-photodetail-info h1 a:active, #zc-wrapper #zc-photodetail-info h1 a:link, #zc-wrapper #zc-photodetail-info h1 a:hover, #zc-wrapper #zc-photodetail-info h1 a:visited {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+}
+#zc-wrapper #zc-photodetail-info h1 a:hover {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: none;
+}
+#zc-wrapper #zc-photodetail-info h1 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none;
+}
+#zc-wrapper #zc-photogallery-container, #zc-wrapper #zc-photodetail-container {
+    vertical-align: top;
+}
+#zc-wrapper #zc-photogal-preview-main-image {
+    display: inline;
+}
+#zc-wrapper .zc-photogal-preview-left {
+    float: left;
+}
+#zc-wrapper .zc-photogal-preview-right {
+    float: right;
+}
+#zc-wrapper #zc-photogal-preview-showcard-thumbnails {
+    height: 85px;
+}
+#zc-wrapper #zc-photogal-preview-film-thumbnails {
+    height: 100px;
+}
+#zc-wrapper #zc-photogal-preview-film-thumbnails, #zc-wrapper #zc-photogal-preview-showcard-thumbnails {
+    padding: 6px 0;
+    text-align: center;
+}
+#zc-wrapper ul#zc-photogal-preview-film-thumbnails, #zc-wrapper ul#zc-photogal-preview-showcard-thumbnails, #zc-wrapper ul#zc-photogal-preview-film-thumbnails li img, #zc-wrapper ul#zc-photogal-preview-showcard-thumbnails li img {
+    display: inline;
+}
+#zc-wrapper ul#zc-photogal-preview-film-thumbnails li, #zc-wrapper ul#zc-photogal-preview-showcard-thumbnails li {
+    display: inline;
+    float: left;
+    list-style: none outside none;
+    width: 32%;
+    padding:1% 1% 0 0;
+}
+#zc-wrapper a.zc-photogallery-url:active, #zc-wrapper a.zc-photogallery-url:link, #zc-wrapper a.zc-photogallery-url:hover, #zc-wrapper a.zc-photogallery-url:visited {
+    clear: left;
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 6px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+#zc-wrapper a.zc-photogallery-url-bold:active, #zc-wrapper a.zc-photogallery-url-bold:link, #zc-wrapper a.zc-photogallery-url-bold:hover, #zc-wrapper a.zc-photogallery-url-bold:visited {
+    clear: both;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+}
+#zc-provider {
+    background: url("http://images.zap2it.com/tvlistings/zcore-provider-bg-top.png") no-repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 12px;
+    margin: 20px auto;
+    text-align: left;
+    width: 405px;
+}
+:root #zc-provider {
+    margin-bottom: 20px;
+}
+#zc-provider a:link, #zc-provider a:visited, #zc-provider a:hover, #zc-provider a:active {
+    font-size: 10px;
+    font-weight: normal;
+}
+#zc-provider .zc-provider-list {
+    background: url("http://images.zap2it.com/tvlistings/zcore-provider-bg-bottom.png") no-repeat scroll 0 100% transparent;
+    padding: 20px;
+    position: relative;
+}
+#zc-provider input {
+    padding: 2px;
+}
+#zc-provider .zc-available-lineup {
+    color: #CC0000;
+    font-size: 11px;
+    left: 0;
+    position: relative;
+}
+#zc-provider h2 {
+    font-size: 16px;
+}
+#zc-provider h4 {
+    font-size: 11px;
+    margin-top: 10px;
+}
+#zc-provider .zc-localization-error-msg {
+    color: #CC0000;
+    font-size: 11px;
+}
+#zc-provider .zc-non-localization-msg {
+    color: #CC0000;
+    font-size: 11px;
+    padding: 0 0 15px;
+}
+#zc-provider .treeview a, #zc-provider .treeview a:link, #zc-provider .treeview a:visited, #zc-provider .treeview a:hover, #zc-provider .treeview a:active {
+    font-size: 11px;
+    font-weight: bold;
+}
+#zc-wrapper .treeview ul {
+    margin-top: 10px;
+}
+#zc-wrapper .treeview ul form {
+    line-height: 0.4;
+}
+* html #zc-wrapper .treeview ul form {
+    line-height: 0;
+}
+:first-child + html #zc-wrapper .treeview ul form {
+    line-height: 0;
+}
+#zc-wrapper .treeview ul form span {
+    display: block;
+    padding: 0;
+}
+* html #zc-wrapper .treeview ul form span {
+    padding: 5px 0;
+}
+:first-child + html #zc-wrapper .treeview ul form span {
+    padding: 5px 0;
+}
+#zc-wrapper .treeview .hitarea {
+    background: url("http://images.zap2it.com/zc/treeview/treeview-default.gif") no-repeat scroll -64px -27px transparent;
+    cursor: pointer;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 16px;
+}
+* html #zc-wrapper .treeview .hitarea {
+    left: -16px;
+    top: 6px;
+}
+:first-child + html #zc-wrapper .treeview .hitarea {
+    top: 6px;
+}
+#zc-wrapper .treeview li {
+    margin: 0;
+    padding: 3px 0 12px 16px;
+    position: relative;
+}
+#zc-wrapper .treeview a.selected {
+    background-color: #EEEEEE;
+}
+#zc-wrapper #treecontrol {
+    display: none;
+    margin: 1em 0;
+}
+#zc-wrapper .treeview .hover {
+    color: red;
+    cursor: pointer;
+}
+#zc-wrapper .treeview li {
+    background: none no-repeat scroll 0 0 transparent;
+    line-height: 0.8;
+}
+#zc-wrapper .treeview li.collapsable {
+    background-position: 0 -176px;
+    padding-bottom: 10px;
+}
+#zc-wrapper .treeview .expandable-hitarea {
+    background-position: -80px -5px;
+}
+#zc-wrapper #zc-dt-e-o-l, #zc-wrapper #zc-dt-e-o-n, #zc-wrapper #zc-dt-e-o-p, #zc-wrapper #zc-dt-e-o-f {
+    font-size: 9px;
+    line-height: 12px;
+}
+#zc-wrapper .zc-ic-ne, #zc-wrapper .zc-ic-s-ne, #zc-wrapper #zc-dt-e-o-n, #zc-wrapper .zc-ic-live, #zc-wrapper .zc-ic-premiere, #zc-wrapper #zc-dt-e-o-f, #zc-wrapper .zc-ic-finale {
+    font-size: 9px !important;
+    line-height: 12px;
+    padding: 2px 2px 0 !important;
+}
+#zc-wrapper .schedule-grid-attributes .zc-ic-ne, #zc-wrapper .schedule-grid-attributes .zc-ic-live, #zc-wrapper .schedule-grid-attributes .zc-ic-premiere, #zc-wrapper .schedule-grid-attributes .zc-ic-finale {
+    line-height: 18px;
+}
+#zc-wrapper #zc-shell .zc-ic {
+    padding: 2px 2px 0 !important;
+}
+#zc-wrapper .zc-twocolumn .zc-watch-now #zc-bar {
+    padding: 0 0 10px;
+}
+#zc-wrapper .zc-watch-now .zc-content .zc-vid-ep-det .zc-item-label, #zc-wrapper .zc-watch-now .zc-content .zc-vid-ep-det .zc-item-content {
+    font-weight: bold;
+}
+#zc-wrapper .zc-watch-now .zc-content .zc-vid-ep-det .zc-item-label, #zc-wrapper .zc-watch-now .zc-content .zc-vid-ep-det .zc-item-content, #zc-wrapper .zc-watch-now .zc-content .zc-vid-ep-det p {
+    font-size: 12px;
+}
+#zc-wrapper a.watch-online, #zc-wrapper a.watch-online:link, #zc-wrapper a.watch-online:visited, #zc-wrapper a.watch-online:hover, #zc-wrapper a.watch-online:active {
+    line-height: 20px;
+    padding: 4px 0 4px 25px;
+    vertical-align: middle;
+}
+#zc-wrapper .watchontvicon {
+    background: url("http://images.zap2it.com/html/images/icon-tv.png") no-repeat scroll left center transparent;
+}
+#zc-wrapper .watchfreeicon {
+    background: url("http://images.zap2it.com/html/images/watch-free.gif") no-repeat scroll left center transparent;
+}
+#zc-wrapper .watchpaidicon {
+    background: url("http://images.zap2it.com/html/images/watch-paid.gif") no-repeat scroll left center transparent;
+}
+#zc-wrapper .myfavesicon{
+    background: url('http://images.zap2it.com/html/images/icon-myfaves-gdt.png') top left no-repeat;
+    height: 16px;
+    display: block;
+    width: 128px;
+    padding: 0;
+    overflow: hidden;
+}
+#zc-wrapper .myfaves-add {
+    background-position:0 3px;
+}
+#zc-wrapper .myfaves-current {
+    background-position:0 -16px;
+}
+#zc-wrapper .myfaves-current:hover {
+    background-position:0 -34px;
+}
+#zc-wrapper .zc-wn-selected-provider {
+    background-color: #ECE4F1;
+}
+#zc-wrapper .zc-sub-section-title {
+    border-bottom: 1px inset #999999;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#zc-wrapper .zc-wn-video-sash {
+    background: url("http://images.zap2it.com/html/images/zc-ovd-sashbanner_bg.png") repeat scroll left top transparent;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 460px;
+}
+#zc-wrapper .zc-wn-video-sash a {
+    color: #DDDDDD;
+    display: inline-block;
+    font-size: 20px !important;
+    font-weight: normal !important;
+    line-height: 24px !important;
+    vertical-align: middle;
+    width: 275px;
+}
+#zc-wrapper .zc-wn-video-sash p {
+    display: table-cell;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    width: 460px;
+}
+#zc-wrapper .zc-wn-video-sash #zc-play-button {
+    background: url("http://images.zap2it.com/html/images/play-button.png") no-repeat scroll left top transparent;
+    height: 50px;
+    width: 50px;
+}
+#zc-wrapper .zc-watch-now {
+    padding: 5px 5px 0;
+}
+#zc-wrapper .zc-watch-now .zc-vid-ep-det h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+#zc-wrapper .zc-watch-now .zc-vid-ep-det h3 a {
+    color: #004276;
+    font-size: 15px;
+}
+#zc-wrapper .zc-watch-now .zc-adspace {
+    padding: 0;
+}
+#zc-wrapper .zc-watch-now .zc-content {
+    margin: 0 10px 10px 0;
+    position: relative;
+    width: 460px;
+}
+#zc-wrapper .zc-watch-now .zc-content .watch-now-image {
+    float: left;
+    margin-right: 5px;
+}
+#zc-wrapper .zc-watch-now .zc-content .zc-vid-ep-desc {
+    float: left;
+    width: 345px;
+}
+#zc-wrapper .zc-split-panel {
+    display: block;
+    margin: 12px 0 0;
+    width: 100%;
+    float: left;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item {
+    display: block;
+    float: left;
+    padding-top: 5px;
+    width: 48%;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item .zc-sub-section-title {
+    border-bottom: 1px dashed black;
+    font-size: 16px;
+    padding: 0;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item:first-child {
+    display: block;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item .zc-vid-prov-list li img {
+    float: left;
+    height: 38px;
+    width: 57px;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item .zc-vid-prov-list li {
+    clear: left;
+    vertical-align: middle;
+}
+#zc-wrapper .zc-wn-cast {
+    margin-top: 10px;
+    width: 300px;
+}
+#zc-wrapper .zc-wn-cast h2 {
+    margin: 0;
+    padding: 0;
+}
+#zc-wrapper .zc-vid-ep-det {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+#zc-wrapper #zc-watch-now {
+    width: 625px;
+    float: right;
+}
+#zc-wrapper .zc-wn-viewport {
+    background-color: #191919;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 270px;
+    overflow: hidden;
+    padding-left: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 450px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+#zc-wrapper .zc-wn-viewport .zc-wn-viewport-overlay {
+    height: 270px;
+    width: 450px;
+    background:url('http://images.zap2it.com/html/images/wn-play-button.png') no-repeat scroll 50% 50% transparent;
+}
+#zc-wrapper .zc-wn-viewport .zc-wn-viewport-message {
+    background: url('http://images.zap2it.com/html/images/player-hover-lg.png') no-repeat top left scroll transparent;
+    position: absolute;
+    top: 185px;
+    left: 75px;
+    height: 43px;
+    line-height: 44px;
+    width: 301px;
+    z-index: 200;
+    text-decoration: underline;
+    font-weight: bold;
+    border-radius: 7px;
+    display: block;
+    color: #000;
+}
+#zc-wrapper .zc-wn-viewport .zc-wn-viewport-message:hover {
+    text-decoration: none;
+}
+#zc-wrapper .zc-wn-viewport #zc-wn-video-image {
+    text-align: center;
+    vertical-align: middle;
+}
+#zc-wrapper #zc-watch-now-sources {
+    width: 165px;
+    float: left;
+}
+#zc-wrapper #zc-watch-now-sources li.zc-wn-source-icon {
+    background: url('http://images.zap2it.com/html/images/watch-online-buttons.png') no-repeat top left scroll transparent;
+    width: 163px;
+    height: 40px;
+    margin-bottom:4px;
+    position: relative;
+    cursor: pointer;
+    padding: 2px;
+}
+#zc-wrapper #zc-watch-now-sources .wn-video-option {
+    margin-left: 70px;
+    text-align: right;
+}
+#zc-wrapper #zc-watch-now-sources .zc-wn-source-name {
+    display: none;
+}
+#zc-wrapper #zc-watch-now-sources .zc-wn-type {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-right: 2px;
+}
+
+#zc-wrapper #zc-watch-now-sources .zc-wn-hd, .wn-sc-pp .zc-wn-hd {
+    background-color: #878787;
+    border-radius: 3px;
+    color: #FFFFFF !important;
+    font-size: 10px;
+    margin-right: 5px;
+    padding: 1px 3px !important;
+}
+#zc-wrapper #zc-watch-now-sources .zc-wn-sd {
+    font-size: 10px;
+    color: #fff;
+    padding: 3px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 3px;
+    width: 14px;
+}
+#zc-wrapper .zc-item-button-container {
+    clear: both;
+    padding: 5px 0;
+}
+#zc-wrapper .zc-item-button {
+    margin-top: 12px;
+    text-align: center;
+}
+#zc-wrapper .zc-item-button a {
+    color: #000000;
+    display: inline-block;
+    position: relative;
+    width: 167px;
+    height: 44px;
+    line-height:44px;
+    background: url('http://images.zap2it.com/html/images/watch-online-buttons.png') no-repeat top left scroll transparent;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item .zc-episode-title {
+    color: #004276;
+    font-size: 1em;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item .zc-sub-section-title {
+    border-bottom: 2px solid #737373;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item .zc-item-label, #zc-wrapper .zc-split-panel .zc-split-panel-item .zc-item-content {
+    font-size: 1em;
+}
+#zc-wrapper .zc-split-panel .zc-split-panel-item p {
+    font-size: 12px;
+}
+
+
+#zc-wrapper .zc-wn-source-icon .icon, .icon {
+    background: url("http://images.zap2it.com/html/images/watchnow-icon.png") no-repeat scroll 10px 3px transparent;
+    width: 57px;
+}
+#zc-wrapper .zc-wn-source-icon .abc, .abc {
+    background: url("http://images.zap2it.com/html/images/watchnow-abc.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .abc-family, .abc-family {
+    background: url("http://images.zap2it.com/html/images/watchnow-abc-family.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .adult-swim, .adult-swim {
+    background: url("http://images.zap2it.com/html/images/watchnow-adult-swim.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .a-e, .a-e {
+    background: url("http://images.zap2it.com/html/images/watchnow-a-e.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .amazon-com, .amazon-com {
+    background: url("http://images.zap2it.com/html/images/watchnow-amazon-com.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .amc, .amc {
+    background: url("http://images.zap2it.com/html/images/watchnow-amc.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .bbc-america, .bbc-america {
+    background: url("http://images.zap2it.com/html/images/watchnow-bbc-america.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .bet, .bet {
+    background: url("http://images.zap2it.com/html/images/watchnow-bet.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .big-star, .big-star {
+    background: url("http://images.zap2it.com/html/images/watchnow-big-star.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .biography, .biography {
+    background: url("http://images.zap2it.com/html/images/watchnow-biography.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .cartoon-network, .cartoon-network {
+    background: url("http://images.zap2it.com/html/images/watchnow-cartoon-network.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .cbs, .cbs {
+    background: url("http://images.zap2it.com/html/images/watchnow-cbs.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .cinemanow, .cinemanow {
+    background: url("http://images.zap2it.com/html/images/watchnow-cinemanow.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .colbert-nation, .colbert-nation {
+    background: url("http://images.zap2it.com/html/images/watchnow-colbert_nation.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .comedy-central, .comedy-central {
+    background: url("http://images.zap2it.com/html/images/watchnow-comedy-central.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .crackle, .crackle {
+    background: url("http://images.zap2it.com/html/images/watchnow-crackle.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .disney, .disney {
+    background: url("http://images.zap2it.com/html/images/watchnow-disney.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .discovery-channel, .discovery-channel {
+    background: url("http://images.zap2it.com/html/images/watchnow-discovery-channel.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .food-network, .food-network {
+    background: url("http://images.zap2it.com/html/images/watchnow-food-network.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .fox, .fox {
+    background: url("http://images.zap2it.com/html/images/watchnow-fox.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .hbo, .hbo {
+    background: url("http://images.zap2it.com/html/images/watchnow-hbo.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .hulu, .hulu {
+    background: url("http://images.zap2it.com/html/images/watchnow-hulu.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .itunes-store, .itunes-store {
+    background: url("http://images.zap2it.com/html/images/watchnow-itunes-store.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .lifetime, .lifetime {
+    background: url("http://images.zap2it.com/html/images/watchnow-lifetime.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .mtv, .mtv {
+    background: url("http://images.zap2it.com/html/images/watchnow-mtv.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .national-geographic, .national-geographic {
+    background: url("http://images.zap2it.com/html/images/watchnow-national-geographic.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .nbc, .nbc {
+    background: url("http://images.zap2it.com/html/images/watchnow-nbc.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .netflix, .netflix {
+    background: url("http://images.zap2it.com/html/images/watchnow-netflix.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .nick-com, .nick-com {
+    background: url("http://images.zap2it.com/html/images/watchnow-nick-com.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .oxygen, .oxygen {
+    background: url("http://images.zap2it.com/html/images/watchnow-oxygen.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .pbs, .pbs {
+    background: url("http://images.zap2it.com/html/images/watchnow-pbs.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .showtime, .showtime {
+    background: url("http://images.zap2it.com/html/images/watchnow-showtime.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .snagfilms, .snagfilms {
+    background: url("http://images.zap2it.com/html/images/watchnow-snagfilms.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .spike, .spike {
+    background: url("http://images.zap2it.com/html/images/watchnow-spike.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .syfy, .syfy {
+    background: url("http://images.zap2it.com/html/images/watchnow-syfy.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .tbs, .tbs {
+    background: url("http://images.zap2it.com/html/images/watchnow-tbs.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .the-cw, .the-cw {
+    background: url("http://images.zap2it.com/html/images/watchnow-the-cw.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .the-daily-show, .the-daily-show {
+    background: url("http://images.zap2it.com/html/images/watchnow-the-daily-show.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .tnt, .tnt {
+    background: url("http://images.zap2it.com/html/images/watchnow-tnt.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .tv-com, .tv-com {
+    background: url("http://images.zap2it.com/html/images/watchnow-tv-com.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .tv-land, .tv-land {
+    background: url("http://images.zap2it.com/html/images/watchnow-tv-land.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .usa-network, .usa-network {
+    background: url("http://images.zap2it.com/html/images/watchnow-usa-network.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .vh1, .vh1 {
+    background: url("http://images.zap2it.com/html/images/watchnow-vh1.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .vudu, .vudu {
+    background: url("http://images.zap2it.com/html/images/watchnow-vudu.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+
+}
+#zc-wrapper .zc-wn-source-icon .we-tv, .we-tv {
+    background: url("http://images.zap2it.com/html/images/watchnow-we-tv.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .xfinity, .xfinity {
+    background: url("http://images.zap2it.com/html/images/watchnow-xfinity.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+#zc-wrapper .zc-wn-source-icon .youtube, .youtube {
+    background: url("http://images.zap2it.com/html/images/watchnow-youtube.png") no-repeat scroll 10px 3px transparent;
+    height: 45px;
+    width: 100%;
+}
+
+#zc-wrapper .wn-sc-logo{width:75px;float:left;}
+#zc-wrapper .zc-wn-sc{
+    height:45px;
+    width:170px;
+    margin-bottom:2px;
+    position:relative;
+    overflow:hidden;
+    display:block;
+    float:left;
+    background: url('http://images.zap2it.com/html/images/watch-online-buttons.png') no-repeat top left scroll transparent;
+}
+#zc-wrapper #ovd-sc-wrapper {
+    width:170px;
+    float:left;
+}
+#zc-wrapper .zc-wn-sc-provider {display:none;}
+#zc-wrapper .wn-sc-pp-wrapper {
+    position:relative;
+    top:15px;
+    left:0px;
+}
+#zc-wrapper .wn-sc-ct-2,#zc-wrapper .wn-sc-ct-3,#zc-wrapper .wn-sc-ct-4,#zc-wrapper .wn-sc-ct-5 {top:5px;}
+#zc-wrapper .zc-wn-type {
+    width:60px;
+    text-align:right;
+    float:left;
+    display:block;
+    height:17px;
+}
+#zc-wrapper .zc-wn-type-ns {display:none;}
+#zc-wrapper .zc-wn-hd {float:right;}
+#zc-wrapper .wn-sc-pp {
+    width:85px;
+    float:left;
+    height:17px;
+    display:block;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/****** Olympics Grid Styles ******/
+.olympics-page-date-header {
+    width: 780px;
+    height: 150px;
+    border-bottom: 2px solid #DFDFDF;
+    margin-top: 10px;
+}
+#zc-wrapper .olympics-page-date-header  {
+    width: 780px;
+    height: 150px;
+    border-bottom: none;
+    margin-top: 10px;
+}
+.olympics-page-name, #zc-wrapper .olympics-page-name {
+    background-color: #3A4C66;
+    height: 35px;
+    line-height: 35px;
+    width: 770px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.olympics-date-button-container, #zc-wrapper .olympics-date-button-container  {
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+.olympics-date, #zc-wrapper .olympics-date {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #637B96;
+    padding-left: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.full-listings-button, #zc-wrapper .full-listings-button {
+    color: white;
+    width: 170px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 3px 0 2px;
+    background: url("http://images.zap2it.com/html/images/full-tv-button-long.png") no-repeat scroll top left transparent;
+    cursor: pointer;
+    clear: both;
+    margin: 10px 0 0 5px;
+}
+.full-listings-button, #zc-wrapper .full-listings-button .full-listings-lt-arrows {
+    font-size: 16px;
+    color: #FFF;
+}
+.olympics-user-login-preferences, #zc-wrapper .olympics-user-login-preferences {
+    margin-top: 15px;
+    height: 40px;
+    width: 450px;
+    float: left;
+}
+.olympics-user-login-preferences ul, .olympics-user-login-preferences ul li {
+    float: left;
+}
+#zc-wrapper .olympics-user-login-preferences ul li {
+    float: left;
+    line-height: 12px;
+    font-size: 12px;
+}
+#zc-wrapper .olympics-user-login-preferences ul li a {
+    font-size: 12px;
+}
+.olympics-user-login-preferences #welcome, #zc-wrapper .olympics-user-login-preferences #welcome {
+    font-weight: bold;
+    margin-left: 15px;
+}
+.olympics-user-login-preferences #login, #zc-wrapper .olympics-user-login-preferences #login {
+    padding-right: 10px;
+    border-right: 2px solid #666;
+    margin-left: 15px;
+}
+.olympics-user-login-preferences #preferences, #zc-wrapper .olympics-user-login-preferences #preferences {
+    margin-left: 10px;
+}
+.olympics-localize, #zc-wrapper .olympics-localize{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    margin: 10px 0 0 15px;
+    width: 450px;
+    text-align: left;
+}
+
+.olympics-localize a, #zc-wrapper .olympics-localize a {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+
+}
+.olympics-lineup-select, #zc-wrapper .olympics-lineup-select {
+    background: url("http://images.zap2it.com/zc/arrow-down.gif") no-repeat scroll 65px 9px transparent;
+    width: 75px;
+    overflow: hidden;
+    display: inline-block;
+    font-family: arial, helvetica, sans-serif;
+    position: relative;
+    margin-left: 10px;
+}
+.olympics-lineup-select select, #zc-wrapper .olympics-lineup-select select {
+    color: #004276;
+    font-size: 12px;
+    background: none;
+    border: none;
+    padding-top: 2px;
+    width: 90px;
+}
+#olympics-change-location, #zc-wrapper #olympics-change-location {
+    margin-left: 15px;
+    font-size: 12px;
+}
+.olympics-channel-lineup {
+    font-size: 12px;
+}
+.olympics-change-lineup {
+    margin-left: 5px !important;
+}
+.olympics-change-lineup a {
+    font-size: 12px !important;
+}
+.olympics-change-view{
+    float: right;
+    margin-top: 15px;
+    height: 40px;
+    padding-top: 30px;
+}
+#zc-wrapper .olympics-change-view {
+    float: right;
+    margin-top: 40px;
+    height: 10px;
+}
+.olympics-change-view li, #zc-wrapper .olympics-change-view li {
+    float: left;
+    margin-right: 10px;
+    line-height: 25px;
+    background: url("http://images.zap2it.com/html/images/view-by-channel-button.png") no-repeat scroll top left transparent;
+    text-align: center;
+    width: 115px;
+}
+#zc-wrapper .olympics-change-view li a {
+    line-height: 25px;
+    font-size: 12px;
+    padding: 5px 0px;
+    color: #FFF;
+}
+
+#zc-wrapper .olympics-change-view li.selected {
+    background: none !important;
+    width: 130px;
+}
+#zc-wrapper .olympics-change-view li.selected a {
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+.zc-pg-non-olympic-show {
+    cursor: default !important;
+}
+.zc-pg-non-olympic-show p {
+    color: #004276 !important;
+    opacity: .5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    display: block;
+    margin: 0 5px !important;
+    line-height: 16px;
+}
+.zc-pg-non-olympic-show a {
+    cursor: default;
+    opacity: .5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+}
+.zc-pg-non-olympic-show a:hover {
+    text-decoration: none !important;
+    cursor: default !important;
+    font-weight: bold;
+}
+.zc-pg-non-olympic-show ul, .zc-pg-non-olympic-show span {
+    opacity: .5;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+}
+
+#zc-wrapper .olympics-error-msg {
+    color: #333;
+    font-family: Helvetica,Arial,sans-serif;
+    list-style: none outside none;
+    margin: 15px 0 15px 35px;
+    padding: 0;
+    font-size: 12px
+
+}
+#zc-wrapper .olympics-error-msg a {
+    text-decoration:underline;
+    font-size: 12px;
+
+}
+
+#zc-wrapper .olympics-listings-button {
+    background: url("http://images.zap2it.com/html/images/full-tv-button.png") no-repeat scroll left top transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    margin: -20px 0 0 450px;
+    padding: 0 5px;
+    width: 170px;
+    font-weight: bold;
+}
+#zc-wrapper .olympics-listings-button .new-feature {
+    float: right !important;
+    right: 0px;
+    top: -12px;
+    height: 25px;
+    position: relative;
+    display: none;
+}
+#zc-wrapper #lb-ad-wrapper, #zc-wrapper .lb-ad-wrapper {
+    padding:15px 0px;
+}
+#zc-wrapper .page-head {
+    width: 100%;
+    height: 35px;
+    font-weight: bold;
+    background-color: #657998;
+}
+#zc-wrapper .page-head .page-name {
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    color: #FFF;
+    background-color: #3a4c66;
+    padding:0 1%;
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+}
+#zc-wrapper .page-head .page-head-logo{
+    position:relative;
+    top:3px;
+}
+#zc-wrapper .page-head .page-subtitle {
+    height: 100%;
+    line-height: 35px;
+    text-align: left;
+    color: #FFF;
+    text-transform: uppercase;
+    float: left;
+    font-size: 20px;
+    padding-left: 18px;
+}
+#zc-wrapper .page-head .sub-long {
+    text-transform:none;
+    font-weight:normal;
+    padding-left:1%;
+}
+#zc-wrapper #category .cd-title{
+    background-color: #3a4c66;
+    color:#FFF;
+    height:100%;
+}
+#zc-wrapper .zc-title-logo{
+    position:relative;
+    top:3px;
+    left:-10px;
+}
+#zc-wrapper #gpt-728x90-top-tvl, #zc-wrapper #gpt-728x90-bot-tvl{
+    width:728px;
+    margin:10px auto;
+    display:block;
+    background:none;
+    overflow:auto;
+}
+.tb-film {
+    width: 100px !important;
+    padding: 1px 2px 0 0 !important;
+}
+#gpt-160x600-sky-tvl, #gpt-160x120-bot-tvl {
+    padding: 5px 0 5px 0;
+}
+#gpt-160x120-top-tvl {
+    padding: 10px 0 5px 0;
+}
+#zc-wrapper #zc-search-link {display:none;}
+#zc-wrapper .my-faves-intro {
+    background: #f8e07e;
+    width: 500px;
+    padding: 20px 30px !important;
+    border: 1px solid #cfa42f;
+    display: block;
+    text-align: center;
+    margin: 15px auto !important;
+    font-size:16px;
+}
+#zc-wrapper .my-faves-intro a{
+    font-size:16px;
+    text-decoration:underline;
+}
+#zc-wrapper #zc-breadcrumb{
+    width:70%;
+    float:left;
+    overflow:hidden;
+}

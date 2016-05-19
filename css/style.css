@@ -15,16 +15,20 @@
 .mainHero{
     position: relative;
     width: 100%;
-    max-height: 500px !important;
-    min-height: 300px;
+    max-height: 600px !important;
+    min-height: 400px;
     background-size: cover;
 }
-.mainHero-image-info{
-    position: absolute;
-    left: 5%;
-    bottom: 10%;
-    color: white;
-    width: 300px;
+.showPage ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+.showPage li:before {
+    content: "•";
+    padding-right: 8px;
+    color: #FD7A04;
+    font-size: 20px;
 }
 .slick-dots li button:before{
     font-size: 20px;
@@ -42,39 +46,23 @@ hr{
     margin-bottom: -5px;
     border-top: 1px solid #333;
 }
-.image-wrapper {
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
+.showPage h3{
+    font-size: 21px;
+    line-height: 32px;
+    margin:5px 0 10px;
 }
-.image-wrapper img {
-    height: 100%;
-    width: 100%;
+.showPage h6{
+    margin:0 0 10px 0;
 }
-.image-wrapper .image-overlay {
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    background-color: rgba(0, 0, 0,.75);
-    color: white;
-    border-radius:60px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
+.showPage a{
+    text-transform: uppercase;
+    color: #FD7A04;
 }
-.image-overlay p{
-    padding-top: 20px;
-    font-size: 10px;
-}
+
 .row{
     padding-top: 36px;
 }
-.tightList p{
-    margin-top: -10px;
-}
-.tightList{
-    padding-top: 20px;
-}
+
 .centerList div {
     height: 400px;
 }
@@ -87,41 +75,78 @@ hr{
     height: 436px;
     width: 200px;
 }
-.hero-button {
-    padding: 15px 30px;
-    background-color: #333333;
+.hero-show-info {
+    padding: 0px 30px;
+    background-color: rgba(0,145,177,.7) ;
     color: white;
-    text-transform: uppercase;
     border: none;
     font-weight: 500;
     font-size: 20px;
-}
-.nameSlides{
     position: absolute;
-    bottom: 0%;
+    left: 3%;
+    bottom: 5%;
+    width: 400px;
+}
+.hero-show-info  h3{
+    font-size: 30px;
+    font-family: "Lora", serif;
+    line-height: 36px;
+    color: white;
+}
+.hero-show-info  h6{
+    font-size: 16px;
+    font-family: "Lora", serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+.nameSlides h3{
+    position: absolute;
+    bottom:10%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: capitalize;
-    font-size: 20px;
+    color: #1dc4bc;
+    font-size: 30px;
 }
+.nameSlides p{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    color: white;
+    font-size: 16px;
+}
+
+
 .hero-image-info h1,
 .hero-image-info h3{
     color: white;
 }
-.widget-show div:nth-child(odd){
-    color:white;
-    background: black;
+.widget-show div:first-child{
+    background: #1dc4bc;
     padding: 10px 15px;
 }
+.widget-show div h4{
+    color: white;
+}
 .widget-show div:nth-child(even){
-     background: #666666;
+     background: white;
+    background-size: cover;
+     color: #333333;
+     padding: 10px 15px ;
+}
+.widget-show div:nth-child(3){
+     background: #333333;
     background-size: cover;
      color: white;
-     padding: 10px 15px;
+     padding: 10px 15px 0 15px;
+    margin-bottom: -25px;
 }
 .widget-button {
     padding: 10px 20px;
-    background-color: #333333;
+    background-color: #fd7a04;
     color: white;
     text-transform: uppercase;
     border: none;
@@ -142,8 +167,116 @@ hr{
     margin-top: 20px;
 }
 .topstories-schedule-info{
-    background-color: #666666;
+    background-color: #999999;
     color: white;
     font-size: 13px;
     margin-bottom: -10px ;
+}
+.bugButton{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    margin: auto;
+    width: 100px;
+}
+
+.bugButton img {
+    width: 100px;
+    position: relative;
+    z-index: 1;
+}
+.bugButton p {
+    z-index: 2;
+    text-transform: capitalize;
+    color: white;
+    position: absolute;
+    margin: auto;
+    top:20%;
+    right:35%;
+    text-align: center;
+}
+.slidesHost h3 {
+    font-size: 30px;
+    font-family: "Lora", serif;
+    line-height: 36px;
+    padding: 30px 20px 0 20px;
+    color: #fd7a04;
+}
+.slidesHost a {
+    font-size: 16px;
+    font-family: "Lora", serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px 20px 0 20px;
+    color: #fd7a04;
+    text-transform: uppercase;
+
+}
+.slidesHost a:hover {
+    color: #1dc4bc;
+}
+.slidesHost h6 {
+    font-size: 16px;
+    font-family: "Lora", serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 30px 20px 0 20px;
+    color: black;
+}
+.hero1{
+    position: absolute;
+    width: 400px;
+    bottom: 30%;
+    right: 5%;
+    text-transform: uppercase;
+}
+.hero1 h3,
+.hero1 h6{
+    color: white;
+}
+.hero1 a{
+    color: white;
+    border: white solid 1px;
+    padding: 10px 20px;
+}
+.hero1 a:hover{
+    color: #1dc4bc;
+}
+.signupWidget h3{
+    font-size: 25px;
+    font-family: "Lora", serif;
+    line-height: 36px;
+}
+.signupWidget{
+    background-color: rgba(153,153,153,.1);
+    padding: 10px 15px;
+}
+.widget-signup {
+    text-align: left;
+    display: inline;
+}
+.widget-signup input[type="text"] {
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 250px;
+    margin-right:-40px;
+}
+.widget-signup .form {
+    float:left;
+}
+.widget-signup input[type="text"]:focus {
+    box-shadow:none;
+    border-color:#1DC4BC;
+}
+.widget-signup button[type="submit"] {
+    border-radius: 0;
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    background:url(../img/right-arrow.png) no-repeat center center #FD7A04;
+    width:45px;
+    border:0;
 }
