@@ -4,8 +4,10 @@
 $(document).ready(function(){
 
     $(".banner").slick({
-        centerMode: false,
+        centerMode: true,
         dots:true,
+        centerPadding: '0px',
+
         accessibility:true,
         autoplay: true,
         autoplaySpeed:3000,
@@ -41,7 +43,7 @@ $(document).ready(function(){
                 breakpoint: 768,
                 settings: {
                     arrows: true,
-                    centerMode: true,
+                    centerMode: false,
                     centerPadding: '50px',
                     slidesToShow: 2,
 
