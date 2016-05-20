@@ -1,0 +1,537 @@
+@charset "UTF-8";
+/* CSS Document */
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #337ab7;
+	text-decoration: none;
+}
+.global-elements {
+	min-height: 500px;
+}
+.global-elements, .show-scrollers {
+	margin-top: 176px;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1e1e1+0,ffffff+100 */
+	padding: 30px 15px;
+	background: rgb(225,225,225); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(225,225,225,1) 0, rgba(255,255,255,1) 500px); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(225,225,225,1) 0, rgba(255,255,255,1) 500px); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(225,225,225,1) 0, rgba(255,255,255,1) 500px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+.show-scrollers {
+	margin: 0;
+	padding: 0;
+}
+.total-header {
+	border-bottom: none;
+}
+.navbar {
+	border-bottom: 4px solid #fd7a04;
+}
+.navbar-nav {
+	margin-right: 0;
+}
+.login-form {
+	max-width: 800px;
+	margin: 40px auto;
+	background: #fff;
+	padding: 30px;
+}
+.login-form h3 {
+	font-size: 24px;
+	margin-top: 0;
+}
+.login-form .row .border-right {
+	border-right: 1px solid #e1e1e1;
+}
+.login-form .row .col-md-6.last {
+	padding-left: 24px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+	background: #fff;
+	height: 40px;
+}
+.login-form label, .login-form input[type="text"], .login-form input[type="email"], .login-form input[type="password"] {
+	display: block;
+	margin-bottom: 5px;
+	width: 90%;
+}
+.login-form input[type="text"], .login-form input[type="email"], .login-form input[type="password"] {
+	margin-bottom: 10px;
+	border: 1px solid #e1e1e1;
+}
+.login-form input[type="button"], .login-form input[type="submit"] {
+	background: #fd7a04;
+	color: #fff;
+	font-weight: bold;
+	border: 0;
+	height: 40px;
+	padding: 0 15px;
+}
+.login-form input[type=submit] {
+	padding-left: 45px;
+	background: url(http://dev.zliving.com/App_Themes/Zliving/images/right-arrow.png) no-repeat 15px center #fd7a04;
+}
+.login-form a.facebook-login img {
+	height: 40px;
+}
+div.item-placeholder a.close {
+	color: #fd7a04;
+	font-family: arial;
+	font-size: 13px;
+	font-weight: 600;
+	height: 22px;
+	line-height: normal;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 6px;
+	width: 26px;
+	opacity: 1;
+}
+div.item-placeholder p {
+	color: #686868;
+	font-size: 13px;
+	font-weight: 300;
+}
+div.item-placeholder h3 {
+	color: #333;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 10px 0 5px;
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.8);
+}
+div.item-placeholder {
+	border: 1px solid #ececec;
+	height: 155px;
+	padding: 20px 15px;
+	position: relative;
+	margin-bottom: 20px;
+}
+div.item-placeholder .device-detail {
+	display: block;
+	margin: 0 0 0 5px;
+	padding: 0 0 0 50px;
+}
+div.item-placeholder .device-icon {
+	background-position: left 10px;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	float: left;
+	height: 60px;
+	width: 50px;
+}
+div.item-placeholder .device-icon.device-desktop {
+	background-image: url(../img/device-desktop.png);
+}
+div.item-placeholder .device-icon.device-mac {
+	background-image: url(../img/device-mac.png);
+}
+/* Player Styles */
+.main-banner {
+	min-height: 500px;
+	position: relative;
+	background: url(../img/banner-2.jpg) no-repeat right center transparent;
+	transition: background 1s ease;
+}
+.global-elements.fullscreen {
+	padding: 0;
+}
+.main-banner:before {
+	content: '';
+	height: 100%;
+	position: absolute;
+	width: 60%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+80,000000+100&1+0,1+80,0+100 */
+	background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1 ); /* IE6-9 */
+}
+.main-banner .show-info {
+	color: #fff;
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	width: 40%;
+	padding-left: 48px;
+}
+.main-banner .show-info p {
+	margin-bottom: 0;
+}
+.main-banner .show-info h2 {
+	margin: 10px 0px;
+}
+a.watch-now {
+	border: 3px solid #fd7a04;
+	color: #fd7a04;
+	padding: 10px 15px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+.global-elements {
+	margin-top: 123px;
+}
+}
+
+@media (max-width: 767px) {
+.global-elements {
+	margin-top: 80px;
+}
+.login-form {
+	margin-top: 0;
+}
+.login-form .row .border-right {
+	border: none;
+}
+.login-form .row .col-md-6.last {
+	padding-left: 0px;
+	border-top: 1px solid #e1e1e1;
+	margin-top: 24px;
+}
+}
+/* Slider */
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.slick-list:focus {
+	outline: none;
+}
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+}
+.slick-track:before, .slick-track:after {
+	display: table;
+	content: '';
+}
+.slick-track:after {
+	clear: both;
+}
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+.slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+[dir='rtl'] .slick-slide {
+	float: right;
+}
+.slick-slide img {
+	display: block;
+}
+.slick-slide.slick-loading img {
+	display: none;
+}
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+.slick-initialized .slick-slide {
+	display: block;
+}
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+	display: none;
+}
+.slider {
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0 48px 0 48px;
+}
+.guide .slider {
+	height: 124px;
+}
+.guide .slider img {
+	height: 124px;
+	width: auto;
+	display: inline-block;
+	float: left;
+	border-right: 1px solid #e1e1e1;
+}
+.guide .slider .time-and-name {
+	padding: 0px 16px;
+	height: 124px;
+	float: left;
+	line-height: 18px;
+	width: 45%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+}
+.guide .slider .time-and-name span {
+	color: #fd7a04;
+	font-size: 18px;
+	display: block;
+	font-weight: normal;
+	padding-top: 40px;
+}
+.guide .show-snippet {
+	width: 100%;
+	background: #fff;
+	position: relative;
+}
+.guide .show-snippet:before, .guide .show-snippet.active:before, .guide .show-snippet:hover:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border: 4px solid #fd7a04;
+	transition: border 0.25s ease;
+}
+.guide .show-snippet:before {
+	border: 1px solid #e1e1e1;
+}
+.guide .show-snippet:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.slick-slide {
+	margin: 0px 10px 0 0;
+}
+.slick-slide img {
+	width: 100%;
+}
+.slider .arrows {
+	border: 1px solid #e1e1e1;
+	width: 32px;
+	color: #ccc;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	z-index: 8;
+	top: 0;
+	border: 0;
+	content: '';
+	transition: color 0.5s ease;
+}
+.slider .arrows.right {
+	right: 0px;
+	left: auto;
+}
+.slider .arrows:hover {
+	color: #fd7a04;
+}
+.slider .arrows i {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-size: 32px;
+}
+.slider .arrows.right i {
+	right: 0;
+}
+.guide-container, .daily-listing {
+	margin-bottom: 30px
+}
+.daily-listing img {
+	border: 1px solid #e1e1e1;
+}
+.guide-container {
+	background: #000;
+}
+.daily-listing h4 {
+	margin-left: 36px;
+}
+.daily-listing .img-container {
+	position: relative;
+	cursor: pointer;
+}
+.daily-listing .img-container:before {
+	transition: all 0.5s ease;
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: url(../img/video-icon.png) no-repeat center center transparent;
+	background-size: 48px 48px;
+	opacity: 0;
+}
+.daily-listing .img-container:hover:before {
+	opacity: 1;
+}
+.player-container {
+	background: #000;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.player-container .player {
+	background: url(../img/poster.jpg) no-repeat center center #000;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.player-container .more-options button, .player-container .more-options button:active {
+	background:#fff;
+	padding:5px 10px;
+}
+
+
+
+.player-container .more-options i {
+	padding-right: 10px;
+}
+.player-container .more-options {
+	background: #fff;
+	border-top: 1px solid #ccc;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+}
+.player-container .live-now-paying-label {
+	background: rgba(0,0,0,0.75);
+	color: #fff;
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+}
+.player-container .tray {
+	background: rgba(0,0,0,0.8);
+	padding: 32px;
+	position: absolute;
+	width: 100%;
+	bottom: -100%;
+	transition: bottom 1s ease;
+	
+}
+.player-container .tray h4{
+	color:#fff;
+}
+.player-container .tray p{
+	color: #fff;
+	font-size:14px;
+	line-height:21px;
+}
+.player-container .tray img {
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+.guide .slider .time-and-name {
+	height: 71px;
+}
+.guide .slider .time-and-name span {
+	padding-top: 10px;
+}
+.guide .slider, .guide .slider img {
+	height: 70px;
+}
+}
+
+@media (max-width: 1023px) {
+.main-banner {
+	min-height: 400px;
+}
+.main-banner .show-info p {
+	font-size: 16px;
+	line-height: 21px;
+}
+.guide .slider .time-and-name {
+	height: 71px;
+}
+.guide .slider .time-and-name span {
+	padding-top: 10px;
+}
+.guide .img-container {
+	width: 50%;
+}
+.guide .slider, .guide .slider img {
+	height: auto;
+	width: 100%;
+}
+}
+
+@media (max-width:767px) {
+.main-banner {
+	height: 325px;
+	min-height: 325px;
+	background-position: center top;
+	background-size: 100% auto;
+}
+.main-banner .show-info {
+	width: 100%;
+	padding: 0 15px;
+	top: 75%;
+	text-align: center;
+}
+.main-banner:before {
+	width: 100%;
+	height: 56%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+80,000000+100&1+0,1+80,0+100 */
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=0 ); /* IE6-9 */
+	bottom: 0;
+}
+.main-banner .show-info p {
+	display: none;
+}
+.main-banner .show-info p.time {
+	display: block;
+}
+.main-banner .show-info h2 {
+	margin: 0;
+}
+a.watch-now {
+	margin-top: 10px;
+}
+}
