@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c40a7cc-c95f-4fc1-b750-679e316015f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/a1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/a2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/a3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/lod-style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.mobile.custom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/photo-slider-2.html" afterPath="$PROJECT_DIR$/photo-slider-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/showPage.html" afterPath="$PROJECT_DIR$/showPage.html" />
     </list>
     <ignored path="Splash-V10.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,8 +128,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-703">
-                  <caret line="262" column="16" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
+                <state relative-caret-position="362">
+                  <caret line="261" column="13" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -190,9 +179,9 @@
         <option value="$PROJECT_DIR$/css/slick-theme.css" />
         <option value="$PROJECT_DIR$/photo-slider-2.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/showPage.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -725,12 +714,12 @@
       <workItem from="1463177939047" duration="4083000" />
       <workItem from="1463421469324" duration="4555000" />
       <workItem from="1463431963569" duration="12966000" />
-      <workItem from="1463528299545" duration="35710000" />
+      <workItem from="1463528299545" duration="35846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69695000" />
+    <option name="totallyTimeSpent" value="69831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="983" extended-state="6" />
@@ -1121,26 +1110,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="262" column="16" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/showPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="352" column="20" selection-start-line="352" selection-start-column="20" selection-end-line="352" selection-end-column="20" />
+        <state relative-caret-position="2852">
+          <caret line="506" column="100" selection-start-line="506" selection-start-column="100" selection-end-line="506" selection-end-column="100" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1463702443000" expanded="true" signature="30241:30349" ph="..." />
+            <marker date="1463702443000" expanded="true" signature="30412:30518" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="261" column="13" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
