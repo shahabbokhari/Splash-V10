@@ -1,358 +1,410 @@
 .slides {
-    position: relative;
-    width: 100%;
-    max-height: 500px !important;
-    min-height: 500px;
-    background-size: cover;
+	position: relative;
+	width: 100%;
+	max-height: 500px !important;
+	min-height: 500px;
+	background-size: cover;
 }
-.hero-image-info{
-    position: absolute;
-    right: 20%;
-    top:20%;
-    color: white;
-    width: 400px;
+.hero-image-info {
+	position: absolute;
+	right: 20%;
+	top: 20%;
+	color: white;
+	width: 400px;
 }
-.mainHero{
-    position: relative;
-    width: 100%;
-    max-height: 600px !important;
-    min-height: 400px;
-    background-size: cover;
+.mainHero {
+	position: relative;
+	width: 100%;
+	max-height: 600px !important;
+	min-height: 400px;
+	background-size: cover;
 }
 .showPage ul {
-    list-style: none; /* Remove list bullets */
-    padding: 0;
-    margin: 0;
+	list-style: none; /* Remove list bullets */
+	padding: 0;
+	margin: 0;
 }
 .showPage li:before {
-    content: "•";
-    padding-right: 8px;
-    color: #FD7A04;
-    font-size: 20px;
+	content: "•";
+	padding-right: 8px;
+	color: #FD7A04;
+	font-size: 20px;
 }
-.slick-dots li button:before{
-    font-size: 20px;
-    color: #ffffff;
+.slick-dots li button:before {
+	font-size: 20px;
+	color: #ffffff;
 }
-.slick-dots{
-    padding-bottom: 30px;
+.slick-dots {
+	padding-bottom: 30px;
 }
-.listTab{
-    background-color: #666666;
-    padding: 10px 0px 0px 0;
-    margin-top: 20px;
+.listTab {
+	background-color: #666666;
+	padding: 10px 0px 0px 0;
+	margin-top: 20px;
 }
-hr{
-    margin-bottom: -5px;
-    border-top: 1px solid #333;
+hr {
+	margin-bottom: -5px;
+	border-top: 1px solid #333;
 }
-.showPage h3{
-    font-size: 21px;
-    line-height: 32px;
-    margin:5px 0 10px;
+.showPage h3 {
+	font-size: 21px;
+	line-height: 32px;
+	margin: 5px 0 10px;
 }
-.showPage h6{
-    margin:0 0 10px 0;
+.showPage h6 {
+	margin: 0 0 10px 0;
 }
-.showPage a{
-    text-transform: uppercase;
-    color: #FD7A04;
+.showPage a {
+	text-transform: uppercase;
+	color: #FD7A04;
 }
-
-.row{
-    padding-top: 36px;
+.row {
+	padding-top: 36px;
 }
-
 .centerList div {
-    height: 400px;
+	height: 400px;
 }
-.long-img{
-    position: relative;
-    text-align: center;
+.long-img {
+	position: relative;
+	text-align: center;
 }
-.long-img img{
-    position: absolute;
-    height: auto;
-    width: 170px;
+.long-img img {
+	position: absolute;
+	height: auto;
+	width: 170px;
 }
 .hero-show-info {
-    padding: 0px 30px;
-    background-color: rgba(0,145,177,.7) ;
-    color: white;
-    border: none;
-    font-weight: 500;
-    font-size: 20px;
-    position: absolute;
-    left: 3%;
-    bottom: 5%;
-    width: 400px;
+	padding: 0px 30px;
+	background-color: rgba(0,145,177,.7);
+	color: white;
+	border: none;
+	font-weight: 500;
+	font-size: 20px;
+	position: absolute;
+	left: 3%;
+	bottom: 5%;
+	width: 400px;
 }
-.hero-show-info  h3{
-    font-size: 30px;
-    font-family: "Lora", serif;
-    line-height: 36px;
-    color: white;
+.hero-show-info h3 {
+	font-size: 30px;
+	font-family: "Lora", serif;
+	line-height: 36px;
+	color: white;
 }
-.hero-show-info  h6{
-    font-size: 16px;
-    font-family: "Lora", serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: white;
+.hero-show-info h6 {
+	font-size: 16px;
+	font-family: "Lora", serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
 }
-.nameSlides h3{
-    position: absolute;
-    bottom:15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: capitalize;
-    color: #1dc4bc;
-    font-size: 30px;
+.nameSlides h3 {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: capitalize;
+	color: #1dc4bc;
+	font-size: 30px;
 }
-.nameSlides p{
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: capitalize;
-    color: white;
-    font-size: 16px;
+.nameSlides p {
+	position: absolute;
+	bottom: 8%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: capitalize;
+	color: white;
+	font-size: 16px;
 }
-
-
-.hero-image-info h1,
-.hero-image-info h3{
-    color: white;
+.hero-image-info h1, .hero-image-info h3 {
+	color: white;
 }
-.widget-show .widgetHeader{
-    background: #1dc4bc;
-    padding: 10px 15px;
+.widget-show .widgetHeader {
+	background: #1dc4bc;
+	padding: 10px 15px;
 }
-.widget-show div h4{
-    color: white;
+.widget-show div h4 {
+	color: white;
 }
-
-.widget-show .upnext{
-     background: #333333;
-    background-size: cover;
-     color: white;
-     padding: 10px 15px 0 15px;
-    margin-bottom: -25px;
+.widget-show .upnext {
+	background: #333333;
+	background-size: cover;
+	color: white;
+	padding: 10px 15px 0 15px;
+	margin-bottom: -25px;
 }
 .widget-button {
-    padding: 10px 20px;
-    background-color: #fd7a04;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 20px 0 20px 0;
+	padding: 10px 20px;
+	background-color: #fd7a04;
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 20px 0 20px 0;
 }
-.widget-img{
-    padding-top: 20px;
+.widget-img {
+	padding-top: 20px;
 }
-.tv-schedule-widget{
-    padding: 20px 0;
+.tv-schedule-widget {
+	padding: 20px 0;
 }
-
-.topstories-widget img{
+.topstories-widget img {
 }
-.topstories-widget{
-    margin-left: -30px;
+.topstories-widget {
+	margin-left: -30px;
 }
 .topstories-widget h3 {
-    font-size: 21px;
-    line-height: 32px;
-    margin:-8px 10px;
+	font-size: 21px;
+	line-height: 32px;
+	margin: -8px 10px;
 }
 .topstories-widget h6 {
-    margin:0;
+	margin: 0;
 }
-.bugButton{
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    margin: auto;
-    width: 100px;
+.bugButton {
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	margin: auto;
+	width: 100px;
 }
-
 .bugButton img {
-    width: 100px;
-    position: relative;
-    z-index: 1;
+	width: 100px;
+	position: relative;
+	z-index: 1;
 }
 .bugButton p {
-    z-index: 2;
-    text-transform: capitalize;
-    color: white;
-    position: absolute;
-    margin: auto;
-    top:20%;
-    right:35%;
-    text-align: center;
+	z-index: 2;
+	text-transform: capitalize;
+	color: white;
+	position: absolute;
+	margin: auto;
+	top: 20%;
+	right: 35%;
+	text-align: center;
 }
 .slidesHost h3 {
-    font-size: 30px;
-    font-family: "Lora", serif;
-    line-height: 36px;
-    padding: 30px 20px 0 20px;
-    color: #fd7a04;
+	font-size: 30px;
+	font-family: "Lora", serif;
+	line-height: 36px;
+	padding: 30px 20px 0 20px;
+	color: #fd7a04;
 }
 .slidesHost a {
-    font-size: 16px;
-    font-family: "Lora", serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 0px 20px 0 20px;
-    color: #fd7a04;
-    text-transform: uppercase;
-
+	font-size: 16px;
+	font-family: "Lora", serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 0px 20px 0 20px;
+	color: #fd7a04;
+	text-transform: uppercase;
 }
 .slidesHost a:hover {
-    color: #1dc4bc;
+	color: #1dc4bc;
 }
 .slidesHost h6 {
-    font-size: 16px;
-    font-family: "Lora", serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: white;
-    padding: 10px 20px 0 20px;
-    color: black;
+	font-size: 16px;
+	font-family: "Lora", serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+	padding: 10px 20px 0 20px;
+	color: black;
 }
-.hero1{
-    position: absolute;
-    width: 30%;
-    bottom: 20%;
-    right: 5%;
-    text-transform: uppercase;
+.hero1 {
+	position: absolute;
+	width: 400px;
+	bottom: 30%;
+	right: 5%;
+	text-transform: uppercase;
 }
-.hero1 h3,
-.hero1 h6{
-    color: white;
+.hero1 h3, .hero1 h6 {
+	color: white;
 }
-.hero1 a{
-    color: white;
-    border: white solid 1px;
-    padding: 10px 20px;
+.hero1 a {
+	color: white;
+	border: white solid 1px;
+	padding: 10px 20px;
 }
-.hero1 a:hover{
-    color: #1dc4bc;
+.hero1 a:hover {
+	color: #1dc4bc;
 }
-.signupWidget h3{
-    font-size: 25px;
-    font-family: "Lora", serif;
-    line-height: 36px;
+.signupWidget h3 {
+	font-size: 25px;
+	font-family: "Lora", serif;
+	line-height: 36px;
 }
-.signupWidget{
-    background-color: rgba(153,153,153,.1);
-    padding: 10px 15px;
-    display: block;
+.signupWidget {
+	background-color: rgba(153,153,153,.1);
+	padding: 10px 15px;
+	display: block;
 }
 .widget-signup {
-    text-align: left;
-    display: inline;
+	text-align: left;
+	display: inline;
 }
 .widget-signup input[type="text"] {
-    border-radius: 0;
-    height: 40px;
-    line-height: 40px;
-    float: left;
-    width: 250px;
-    margin-right:-40px;
+	border-radius: 0;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	width: 250px;
+	margin-right: -40px;
 }
 .widget-signup .form {
-    float:left;
+	float: left;
 }
 .widget-signup input[type="text"]:focus {
-    box-shadow:none;
-    border-color:#1DC4BC;
+	box-shadow: none;
+	border-color: #1DC4BC;
 }
 .widget-signup button[type="submit"] {
-    border-radius: 0;
-    float: left;
-    height: 39px;
-    line-height: 39px;
-    background:url(../img/right-arrow.png) no-repeat center center #FD7A04;
-    width:45px;
-    border:0;
+	border-radius: 0;
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	background: url(../img/right-arrow.png) no-repeat center center #FD7A04;
+	width: 45px;
+	border: 0;
 }
-.tab-content{
-    padding-top: 10px;
+.tab-content {
+	padding-top: 10px;
 }
 .banner .slick-slide {
-    position: relative;
+	position: relative;
 }
-
 .banner img {
-    max-width: 500px;
-    height: auto;
-    margin-top: 10px;
-    left:10%;
-    float: left;
-    position: relative;
-    z-index: 8;
+	max-width: 100%;
+	height: auto;
+	margin: 48px 0;
+	float: left;
 }
-
 .banner .slide-info {
-    margin-top: 10px;
-    left:15%;
-    position: relative;
-    z-index: 8;
-    color: white;
+	margin: 48px 0;
+	color: white;
 }
-.slide-info h3{
-    color: white;
+.slide-info h3 {
+	color: white;
+	margin-top: 0;
 }
-.slide-info p{
-    color: white;
-    margin-top:-15px;
-    margin-bottom:0;
+.slide-info p {
+	color: white;
+	margin-top: -15px;
+	margin-bottom: 0;
 }
-.slide-info h6{
-    color: white;
-    max-width: 400px;
+.slide-info h6 {
+	color: white;
+	max-width: 80%;
 }
-.orangeButton{
-    background-color: #fd7a04;
-    padding: 10px 20px;
+.orangeButton {
+	background-color: #fd7a04;
+	padding: 10px 20px;
 }
 .banner .banner-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 400px;
-    width: 100%;
-    background: no-repeat center center transparent;
-    background-size: 120% 120%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
-    transition: background 1s ease;
-    overflow: hidden;
-    margin: 0 48px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: no-repeat center center transparent;
+	background-size: 120% 120%;
+	-webkit-filter: blur(40px); /* Chrome, Opera, etc. */
+	filter: url('blur.svg#blur'); /* Older FF and others - http://jordanhollinger.com/media/blur.svg */
+	filter: blur(40px);
+	transition: background 1s ease;
+	overflow: hidden;
+	margin: 0px;
 }
-.starWidget{
-    background-color: #fd7a04;
-    background-size: cover;
+.banner .row {
+	padding-top: 0;
 }
-.starIn{
-    color: white;
-    padding: 10px 10px 60px 10px;
-    border: white solid 1px;
-    margin-bottom: 0px;
+.banner .arrows {
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 32px;
+	position: absolute;
+	left: 0px;
+	color: #fff;
+	z-index: 9;
+	padding:32px 16px;
+	background:rgba(255,255,255,0.25);
 }
-.starIn h3,
-.starIn p {
-    color: white;
+.banner .arrows.right {
+	left: auto;
+	right: 0px;
 }
-.starForm{
-    background-color: transparent;
-    border-color: white;
-    padding: 15px 25px;
+
+@media (max-width:767px) {
+.banner .arrows {
+	top: 25%;
 }
-.starIn img{
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.banner h3, .banner p, .banner h6 {
+	color: #333;
+}
+.banner .slide-info {
+	background: #fff;
+}
+.banner .banner-wrapper {
+	transform: scale(1.5);
+}
+}
+.banner .slick-dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 250px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.banner .slick-dots button {
+	display: none;
+}
+.banner .slick-dots li {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	height: 16px;
+	width: 16px;
+	background: transparent;
+	border: 0px solid #fff;
+	border-radius: 16px;
+	margin: 0 10px;
+}
+.banner .slick-dots li:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	border-radius: 10px;
+}
+.banner .slick-dots li.slick-active:before  {
+	background:orange;
+}
+.starWidget {
+	background-color: #fd7a04;
+	background-size: cover;
+}
+.starIn {
+	color: white;
+	padding: 10px 10px 60px 10px;
+	border: white solid 1px;
+	margin-bottom: 0px;
+}
+.starIn h3, .starIn p {
+	color: white;
+}
+.starForm {
+	background-color: transparent;
+	border-color: white;
+	padding: 15px 25px;
+}
+.starIn img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }

@@ -7,7 +7,6 @@ $(document).ready(function(){
         centerMode: true,
         dots:true,
         centerPadding: '0px',
-
         accessibility:true,
         autoplay: true,
         autoplaySpeed:3000,
@@ -21,14 +20,21 @@ $(document).ready(function(){
 
     $(".banner").prepend("<div class='banner-wrapper'></div>");
     function changebannerbg(){
-        imgpath=($(".banner .slick-active").children("img").attr("src"));
-        $(".banner .banner-wrapper").css({'height':$(".slick-slide").height(),'width':$(".slick-slide").width(),'background-image':'url('+imgpath+')'});
+		$("img.activeimg").removeClass("activeimg");
+		$(".banner .slick-active img").addClass("activeimg");
+        imgpath=($(".banner img.activeimg").attr("src"));
+		if($(window).width()>767){
+        	$(".banner .banner-wrapper").css({'height':$(".slick-slide").height(),'width':$(".slick-slide").width(),'background-image':'url('+imgpath+')'});
+		}else{
+			$(".banner .banner-wrapper").css({'height':$(".slick-slide img").height()+34,'width':$(".slick-slide").width(),'background-image':'url('+imgpath+')'});
+		}
     }
     changebannerbg();
 
-    $(".banner .arrows").click(function(){
-        changebannerbg();
-    });
+	$(".banner").on('beforeChange',function(){ changebannerbg(); });
+	
+
+    
 
     $('.centerList').slick({
         centerMode: true,
@@ -53,6 +59,7 @@ $(document).ready(function(){
     });
 
 });
+
 
 
 
